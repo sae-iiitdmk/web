@@ -11,8 +11,25 @@
     status.textContent = message;
     reset.disabled = true;
   }
-  function ready() {
-    if (failed) return;
+  let checking = false;
+  async function hasRenderedCar() {
+    const blob = await viewer.toBlob({ mimeType: "image/png" });
+    const bitmap = await createImageBitmap(blob);
+    const sample = document.createElement("canvas");
+    sample.width = sample.height = 48;
+    const context = sample.getContext("2d", { willReadFrequently: true });
+    context.drawImage(bitmap, 0, 0, 48, 48);
+    bitmap.close();
+    const pixels = context.getImageData(0, 0, 48, 48).data;
+    let visible = 0;
+    for (let i = 3; i < pixels.length; i += 4) {
+      if (pixels[i] > 32) visible++;
+    }
+    return visible > 12;
+  }
+  async function ready() {
+    if (failed || checking) return;
+    checking = true;
     const fittedRadius = viewer.getCameraOrbit().radius;
     if (!Number.isFinite(fittedRadius) || fittedRadius <= 0) {
       showFallback("3D unavailable — showing the vehicle render.");
@@ -20,14 +37,23 @@
     }
     viewer.minCameraOrbit = `auto 5deg ${fittedRadius * 0.85}m`;
     viewer.maxCameraOrbit = `auto 175deg ${fittedRadius * 1.5}m`;
-    requestAnimationFrame(() =>
-      requestAnimationFrame(() => {
+    // A load event alone does not prove that this browser drew the model.
+    // Keep the independent image until the canvas contains actual pixels.
+    for (let attempt = 0; attempt < 20 && !failed; attempt++) {
+      await new Promise((resolve) => setTimeout(resolve, 250));
+      try {
+        if (!(await hasRenderedCar())) continue;
         if (failed) return;
         panel.dataset.vehicleState = "ready";
         status.hidden = true;
         reset.disabled = false;
-      }),
-    );
+        return;
+      } catch {
+        // A GPU or capture failure must leave the independent image visible.
+      }
+    }
+    if (!failed)
+      showFallback("3D could not render — showing the vehicle image.");
   }
   viewer.addEventListener("load", ready);
   viewer.addEventListener("error", () => {

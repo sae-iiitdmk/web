@@ -1395,7 +1395,8 @@ a:hover > .icon {
   object-fit: contain;
 }
 .hero-art:not([data-vehicle-state="ready"]) #vehicle-viewer {
-  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 .hero-art[data-vehicle-state="ready"] .vehicle-fallback {
   visibility: hidden;

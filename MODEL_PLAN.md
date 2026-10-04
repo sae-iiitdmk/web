@@ -76,3 +76,5 @@ The original CAD sources remain excluded from Git and deployment.
 
 Reference: [model-viewer camera controls](https://modelviewer.dev/examples/stagingandcameras/),
 [occt-import-js import and triangulation documentation](https://github.com/kovacsv/occt-import-js).
+
+The image-to-3D handoff validates actual canvas alpha pixels rather than trusting a load event. The viewer renders behind the image while initializing; a blank canvas leaves the independent vehicle image visible.
