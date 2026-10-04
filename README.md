@@ -37,15 +37,16 @@ viewer work without a framework. Motion respects reduced-motion preferences;
 unsupported scroll timelines fall back to a static logo. The main content and
 links remain available without JavaScript.
 
-Team photos, a confirmed roster, official social URLs/contact email, and the
-vehicle STEP/render have not yet been supplied. Add real content before making
+Team photos, a confirmed roster, and official social URLs/contact email have not yet been supplied. The vehicle STEP has been supplied locally; see
+MODEL_PLAN.md for its preparation plan. Add real content before making
 claims about people, achievements, or competitions. `DESIGN.md` documents the
 visual system; `PRODUCT.md` records the known product facts.
 
 ## Assets
 
-`assets/logo.jpeg` is the original team logo sheet. The header and home artwork
-use its variants through CSS positioning without modifying the original file.
+`assets/logo.jpeg` is the original team logo sheet. The home artwork uses its variants through CSS positioning. The header uses
+`assets/logo-transparent.png`, a transparent cutout derived from the flat variant
+with imagegen. The original sheet remains available in the gallery.
 Manrope is distributed under the SIL Open Font License; Tabler icons use MIT.
 Their licenses are included in `assets/fonts/` and `assets/icons/`.
 

@@ -10,3 +10,11 @@ _site/
 .impeccable/review/
 .impeccable/hook.cache.json
 .impeccable/config.local.json
+
+# Original CAD source packages are local inputs, not website assets.
+assets/*.zip
+assets/*.STEP
+assets/*.step
+assets/*.stp
+assets/*.SLDASM
+assets/*.SLDPRT

@@ -14,7 +14,7 @@ Existing home, blogs, and gallery routes. Plain HTML, CSS, and browser JavaScrip
 SAE IIITDM Kurnool. User explicitly requested a complete makeover based on https://www.aspensearch.com/. Existing logo sheet: assets/logo.jpeg. The user's reference determines layout and motion; their confirmed brand palette is oxblood, carbon black, and gold. This palette overrides the reference site's colors. Future model motion should move with scrolling rather than require an interactive CAD viewer.
 
 ## Evidence on Hand
-Existing page drafts, one supplied logo sheet, and the team GitHub repository. No team photos, STEP file, confirmed roster, official social URLs, or contact email have been supplied. Existing dated achievements and blog copy are draft material, not verified evidence.
+Existing page drafts, one supplied logo sheet, and the team GitHub repository. Assembly ZIP supplied: assets/Assembly__.zip; main model is Assembly__/gaadi_after_brakes_ass_stp.STEP. No team photos, confirmed roster, official social URLs, or contact email have been supplied. Existing dated achievements and blog copy are draft material, not verified evidence.
 
 ## Open Decisions
 User confirmed: retain all three routes. Prospective students, collaborators, and visitors are likely readers, inferred from the informational team-site brief. Do not invent membership, awards, participation results, or contact information.

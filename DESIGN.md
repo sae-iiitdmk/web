@@ -127,7 +127,7 @@ No box shadows are implemented. Flat tonal blocks, one-pixel divisions, oversize
 
 ## Shapes
 
-Square corners and continuous one-pixel rules define the system. Do not add rounded cards or gradients. Artwork regions clip oversized monograms; logo variants use 200% background sizing to crop the supplied sheet. Gallery collection panels share borders rather than leaving card gutters.
+Square corners and continuous one-pixel rules define the system. Do not add rounded cards or gradients. Artwork regions clip oversized monograms; home logo variants use 200% background sizing to crop the supplied sheet. The header uses the transparent logo PNG with centered contain sizing. Gallery collection panels share borders rather than leaving card gutters.
 
 ## Components
 

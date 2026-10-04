@@ -29,3 +29,11 @@ When adding images, update the corresponding HTML files to reference them. Examp
 - Use optimized images (WebP format recommended for web)
 - Keep file names lowercase with hyphens
 - Include descriptive alt text for accessibility
+
+## Logo assets
+
+- `logo.jpeg`: original four-variant sheet supplied by the team.
+- `logo-transparent.png`: transparent red-and-gold header logo derived with the imagegen skill from the original sheet. The full sheet remains unchanged.
+
+CAD ZIP/STEP inputs are local source files; do not commit them as site assets.
+See `../MODEL_PLAN.md` for the model integration plan.
