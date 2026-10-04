@@ -65,14 +65,13 @@ available for page scrolling. The camera target is locked to the center: pan and
 movement of the interactive panel.
 
 The original 36.45 MB GLB was simplified with glTF Transform (target ratio
-0.22, maximum relative error 0.001), deduplicated, and quantized to 8.66 MB.
+0.08, maximum relative error 0.003), deduplicated, and quantized to 4.38 MB.
 Geometry is centered and converted from millimeters to meters, with its
 original colors and orientation preserved. This is a presentation model,
 not a replacement for the engineering source.
 
 Responsive transparent WebP posters (67 KB desktop, 38 KB mobile) show
-while loading. If 3D loading fails, the poster remains visible with a status
-message. The viewer and model are self-hosted; no CDN is needed at runtime.
+while loading. An independent image outside the WebGL component remains visible until the model loads. If the component, network, or WebGL rendering fails, that image stays visible with a status message. Cached-load events are handled even when they precede script initialization. The viewer and model are self-hosted; no CDN is needed at runtime.
 The original CAD sources remain excluded from Git and deployment.
 
 Reference: [model-viewer camera controls](https://modelviewer.dev/examples/stagingandcameras/),

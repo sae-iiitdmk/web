@@ -107,10 +107,23 @@
             SAE<span class="hero-place">IIITDM Kurnool</span>
           </h1>
         </div>
-        <div class="hero-art">
+        <div class="hero-art" data-vehicle-state="loading">
+          <picture class="vehicle-fallback">
+            <source
+              media="(max-width: 640px)"
+              srcset="assets/vehicle-mobile.webp"
+            />
+            <img
+              src="assets/vehicle.webp"
+              width="1600"
+              height="1000"
+              alt="Vehicle assembly, showing chassis, wheels and suspension"
+              fetchpriority="high"
+            />
+          </picture>
           <model-viewer
             id="vehicle-viewer"
-            src="assets/vehicle.glb"
+            src="assets/vehicle.glb?v=2"
             poster="assets/vehicle.webp"
             camera-controls
             disable-pan
