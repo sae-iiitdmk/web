@@ -25,7 +25,7 @@ Open <http://127.0.0.1:8000>. Stop the server with Ctrl+C.
 ## Design and content
 
 The site uses an Aspen Search-inspired divided grid, oversized Manrope type,
-charcoal/mint panels, and scroll-linked movement of the supplied team monogram.
+oxblood/carbon-black panels with gold accents, and scroll-linked movement of the supplied team monogram.
 Fonts and icons are self-hosted; there is no external runtime dependency.
 
 - Home: chapter introduction, engineering disciplines, teamwork, and verified links.

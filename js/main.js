@@ -20,7 +20,7 @@
     themeButton.querySelector("img").src =
       `assets/icons/${theme === "dark" ? "sun" : "moon"}.svg`;
     document.querySelector('meta[name="theme-color"]').content =
-      theme === "dark" ? "#202320" : "#f6f7f4";
+      theme === "dark" ? "#121212" : "#f5efe1";
   }
   applyTheme(savedTheme || (preferredDark.matches ? "dark" : "light"));
   themeButton.addEventListener("click", () => {
@@ -122,7 +122,7 @@
       const cx = width * 0.58,
         cy = height * 0.5,
         radius = Math.min(width, height) * 0.64;
-      context.fillStyle = "#737d70";
+      context.fillStyle = "#b49355";
       for (let y = 0; y < height; y += 6)
         for (let x = 0; x < width; x += 6) {
           const distance = Math.hypot(x - cx, y - cy) / radius;

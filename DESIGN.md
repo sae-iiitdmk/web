@@ -2,20 +2,22 @@
 name: SAE IIITDM Kurnool
 description: Aspen-inspired editorial grid for the SAE student chapter.
 colors:
-  paper: "#f6f7f4"
-  ink: "#232523"
-  muted: "#575b55"
-  wash: "#e1e4de"
-  mint: "#a5f4cb"
-  on-mint: "#232523"
-  dark: "#232523"
-  on-dark: "#f6f7f4"
-  line: "#b6bcb2"
-  paper-dark-theme: "#202320"
-  ink-dark-theme: "#f0f3ed"
-  muted-dark-theme: "#b8c0b5"
-  wash-dark-theme: "#303630"
-  line-dark-theme: "#586355"
+  paper: "#f5efe1"
+  ink: "#151313"
+  muted: "#665a4c"
+  wash: "#e6d8b8"
+  oxblood: "#4a101b"
+  gold: "#c7a45c"
+  on-gold: "#151313"
+  on-oxblood: "#f3ddb0"
+  dark: "#121212"
+  on-dark: "#f3ddb0"
+  line: "#b8a588"
+  paper-dark-theme: "#121212"
+  ink-dark-theme: "#f3e6c8"
+  muted-dark-theme: "#c3b599"
+  wash-dark-theme: "#242020"
+  line-dark-theme: "#756754"
 typography:
   display:
     fontFamily: "Manrope, sans-serif"
@@ -64,9 +66,9 @@ components:
     backgroundColor: "{colors.wash}"
     textColor: "{colors.ink}"
     padding: "32px"
-  collection-mint:
-    backgroundColor: "{colors.mint}"
-    textColor: "{colors.on-mint}"
+  collection-oxblood:
+    backgroundColor: "{colors.oxblood}"
+    textColor: "{colors.on-oxblood}"
     padding: "32px"
   lightbox:
     backgroundColor: "{colors.paper}"
@@ -81,7 +83,7 @@ components:
 
 **Creative North Star: “Aspen's editorial grid, adapted to SAE.”**
 
-The user-selected Aspen Search reference sets the visual world: oversized Manrope lettering, flat paper and charcoal planes, mint accents, and thin continuous dividers. The supplied SAE logo sheet anchors the identity; its cropped monograms provide artwork without invented team photography.
+The user-selected Aspen Search reference sets the layout and motion; the team palette sets all colors: oversized Manrope lettering, carbon-black and oxblood planes, gold identity accents, and thin continuous dividers. The supplied SAE logo sheet anchors the identity; its cropped monograms provide artwork without invented team photography.
 
 Key characteristics:
 
@@ -93,15 +95,15 @@ Key characteristics:
 
 ### Primary
 
-Mint highlights invitations and selected text. Its fixed dark foreground keeps these surfaces readable in both themes.
+Oxblood (#4a101b) owns invitation panels and the hero artwork, paired with pale gold (#f3ddb0). Gold (#c7a45c) carries the masthead, team-art background, and text selection. Carbon black (#121212) anchors the hero masthead, statement, and footer. These brand colors were explicitly supplied by the user and take precedence over the reference palette.
 
 ### Neutral
 
-Paper and ink form the page foundation. Wash separates artwork and collections; muted supports descriptive copy; line marks secondary divisions. Charcoal blocks retain their light foreground in both themes.
+Paper and ink form the page foundation. Wash separates artwork and collections; muted supports descriptive copy; line marks secondary divisions. Carbon blocks retain their pale-gold foreground in both themes.
 
-The five `*-dark-theme` frontmatter colors replace paper, ink, muted, wash, and line under `data-theme="dark"`. Mint, on-mint, dark, and on-dark remain fixed. Theme selection follows the device until locally overridden using `sae-theme`.
+The five `*-dark-theme` frontmatter colors replace paper, ink, muted, wash, and line under `data-theme="dark"`. Oxblood, on-oxblood, gold, on-gold, dark, and on-dark remain fixed. Theme selection follows the device until locally overridden using `sae-theme`.
 
-**The Paired Surface Rule.** Always pair mint with on-mint and dark with on-dark rather than the current page foreground.
+**The Paired Surface Rule.** Always pair oxblood with on-oxblood, gold with on-gold, and dark with on-dark rather than the current page foreground.
 
 ## Typography
 
@@ -121,7 +123,7 @@ The sticky header is 76px tall, or 66px below 768px. Its layer is 10; the mobile
 
 ## Elevation & Depth
 
-No box shadows are implemented. Flat tonal blocks, one-pixel divisions, oversized type, and clipped artwork establish depth. The native artwork dialog uses an opaque dark translucent backdrop (`rgb(10 15 10 / 0.8)`) rather than a floating card shadow.
+No box shadows are implemented. Flat tonal blocks, one-pixel divisions, oversized type, and clipped artwork establish depth. The native artwork dialog uses an opaque dark translucent backdrop (`rgb(12 10 10 / 0.8)`) rather than a floating card shadow.
 
 ## Shapes
 
@@ -133,7 +135,7 @@ Square corners and continuous one-pixel rules define the system. Do not add roun
 - **Text and block links:** fine underline or top rule with an arrow that shifts 3px right/up on hover. Use these existing action patterns rather than inventing a filled primary button.
 - **Keyboard focus:** links, buttons, and summaries use a 3px current-color outline offset by 5px. The skip link appears on focus above the header.
 - **Discipline details:** native `details`/`summary`, thin top and final bottom rules, 28px vertical summary padding, and a plus icon rotating 45 degrees when open. Topic tags are small labels with bottom rules, not pills.
-- **Notes and collections:** notes are ruled grid rows; collections are flat adjacent panels in wash, charcoal, or mint. Hovered note rows use wash. Maintain explicit captions for unavailable photography.
+- **Notes and collections:** notes are ruled grid rows; collections are flat adjacent panels in wash, charcoal, or oxblood. Hovered note rows use wash. Maintain explicit captions for unavailable photography.
 - **Artwork dialog:** native modal, frontmatter sizing, maximum height 95dvh, contained image at maximum 75dvh, close control, centered caption, and outside-click dismissal. Native Escape behavior is retained.
 - **Monogram motion:** native CSS scroll timelines move the hero mark from `translateX(0) rotate(-8deg)` to `translateX(-38%) rotate(12deg)` across the first 1100px of root scrolling. The team mark moves from `translateX(10%) rotate(5deg)` to `translateX(-12%) rotate(-5deg)` across its view timeline. Unsupported browsers retain static artwork. Reduced motion disables animations/transitions and smooth scrolling. The dotted wheel canvas redraws only on resize, with device-pixel ratio capped at 2.
 
