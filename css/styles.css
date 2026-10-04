@@ -1411,3 +1411,25 @@ a:hover > .icon {
   outline: 2px solid var(--gold);
   outline-offset: -3px;
 }
+
+.vehicle-guidance {
+  position: absolute;
+  top: 52px;
+  left: 24px;
+  right: 24px;
+  padding: 16px;
+  background: var(--oxblood);
+  border: 1px solid var(--gold);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.vehicle-guidance[hidden] {
+  display: none;
+}
+.vehicle-guidance p {
+  margin: 0;
+}
+.vehicle-guidance p + p {
+  margin-top: 8px;
+  font-size: 12px;
+}

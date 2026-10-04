@@ -6,6 +6,7 @@ const panel = document.querySelector(".hero-art");
 const host = document.getElementById("vehicle-viewer");
 const status = document.querySelector(".vehicle-status");
 const reset = document.getElementById("vehicle-reset");
+const guidance = document.querySelector(".vehicle-guidance");
 let renderer,
   controls,
   model,
@@ -25,11 +26,14 @@ const start = new THREE.Spherical(
   THREE.MathUtils.degToRad(139),
 );
 
-function fallback(message) {
+function fallback(message, graphicsUnavailable = false) {
+  guidance.hidden = !graphicsUnavailable;
   panel.dataset.vehicleState = "fallback";
   status.hidden = false;
   status.textContent = message;
   reset.disabled = true;
+  document.getElementById("vehicle-help").textContent =
+    "Static preview · 3D unavailable";
 }
 function resetView() {
   camera.position.setFromSpherical(
@@ -101,7 +105,11 @@ function draw() {
         return;
       }
       panel.dataset.vehicleState = "ready";
-      status.hidden = true;
+      status.hidden = false;
+      status.textContent = "Interactive 3D";
+      guidance.hidden = true;
+      document.getElementById("vehicle-help").textContent =
+        "Drag to rotate · Scroll to zoom";
       reset.disabled = false;
     }
   } catch {
@@ -224,6 +232,10 @@ try {
     undefined,
     () => fallback("3D could not load — showing the vehicle render."),
   );
-} catch {
-  fallback("3D unavailable — showing the vehicle render.");
+} catch (error) {
+  const graphicsUnavailable = /WebGL|context/i.test(error.message);
+  fallback(
+    "3D unavailable — showing the vehicle preview.",
+    graphicsUnavailable,
+  );
 }
