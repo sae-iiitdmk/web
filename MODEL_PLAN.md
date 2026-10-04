@@ -60,9 +60,8 @@ no backend for either image animation or an optional GLB presentation.
 ## Current state
 
 The homepage now contains an interactive 3D panel of the supplied assembly,
-using a self-hosted model-viewer 4.3.1 component. Visitors can rotate, zoom,
-and pan the car, with a Reset view button. Mobile vertical swipes remain
-available for page scrolling. There is no automatic rotation or scroll-driven
+using a self-hosted model-viewer 4.3.1 component. Visitors can rotate and zoom the car, with a Reset view button. Mobile vertical swipes remain
+available for page scrolling. The camera target is locked to the center: pan and tap-to-refocus are disabled to prevent the car leaving the panel. Zoom is limited to 85–150% of the fitted camera distance. There is no automatic rotation or scroll-driven
 movement of the interactive panel.
 
 The original 36.45 MB GLB was simplified with glTF Transform (target ratio

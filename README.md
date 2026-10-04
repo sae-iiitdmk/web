@@ -79,4 +79,4 @@ References:
 - [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Configure a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-The homepage vehicle panel supports rotation, zoom, pan, and reset. It uses a self-hosted model-viewer module in `js/vendor/` and the optimized `assets/vehicle.glb`, with a rendered image while loading. See `MODEL_PLAN.md` for source and conversion details.
+The homepage vehicle panel supports rotation, bounded zoom, and reset. It uses a self-hosted model-viewer module in `js/vendor/` and the optimized `assets/vehicle.glb`, with a rendered image while loading. See `MODEL_PLAN.md` for source and conversion details.

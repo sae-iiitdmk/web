@@ -113,15 +113,17 @@
             src="assets/vehicle.glb"
             poster="assets/vehicle.webp"
             camera-controls
+            disable-pan
+            disable-tap
             touch-action="pan-y"
             camera-orbit="139deg 67deg 105%"
             field-of-view="35deg"
-            min-camera-orbit="auto 5deg 35%"
-            max-camera-orbit="auto 175deg 250%"
+            min-camera-orbit="auto 5deg 80%"
+            max-camera-orbit="auto 175deg 160%"
             exposure="1.1"
             shadow-intensity="0"
             interaction-prompt="none"
-            alt="Interactive 3D view of the SAE vehicle assembly. Drag or use arrow keys to rotate, scroll or pinch to zoom, and right-drag to pan."
+            alt="Interactive 3D view of the SAE vehicle assembly. Drag or use arrow keys to rotate, scroll or pinch to zoom."
             aria-describedby="vehicle-help"
           >
             <picture slot="poster" class="vehicle-poster">
