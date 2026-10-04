@@ -59,8 +59,22 @@ no backend for either image animation or an optional GLB presentation.
 
 ## Current state
 
-Import feasibility and a technical render are verified. Header transparency
-is implemented. The vehicle scene and its scroll animation are planned, and
-have not replaced the live hero yet.
+The homepage now contains an interactive 3D panel of the supplied assembly,
+using a self-hosted model-viewer 4.3.1 component. Visitors can rotate, zoom,
+and pan the car, with a Reset view button. Mobile vertical swipes remain
+available for page scrolling. There is no automatic rotation or scroll-driven
+movement of the interactive panel.
 
-Reference: [occt-import-js import and triangulation documentation](https://github.com/kovacsv/occt-import-js).
+The original 36.45 MB GLB was simplified with glTF Transform (target ratio
+0.22, maximum relative error 0.001), deduplicated, and quantized to 8.66 MB.
+Geometry is centered and converted from millimeters to meters, with its
+original colors and orientation preserved. This is a presentation model,
+not a replacement for the engineering source.
+
+Responsive transparent WebP posters (67 KB desktop, 38 KB mobile) show
+while loading. If 3D loading fails, the poster remains visible with a status
+message. The viewer and model are self-hosted; no CDN is needed at runtime.
+The original CAD sources remain excluded from Git and deployment.
+
+Reference: [model-viewer camera controls](https://modelviewer.dev/examples/stagingandcameras/),
+[occt-import-js import and triangulation documentation](https://github.com/kovacsv/occt-import-js).

@@ -21,7 +21,7 @@ assets/
 When adding images, update the corresponding HTML files to reference them. Example:
 
 ```html
-<img src="assets/images/team/group-photo.jpg" alt="SAE Team 2024">
+<img src="assets/images/team/group-photo.jpg" alt="SAE Team 2024" />
 ```
 
 ## Notes
@@ -37,3 +37,7 @@ When adding images, update the corresponding HTML files to reference them. Examp
 
 CAD ZIP/STEP inputs are local source files; do not commit them as site assets.
 See `../MODEL_PLAN.md` for the model integration plan.
+
+## Vehicle assets
+
+`vehicle.glb` is the optimized interactive assembly imported from the locally supplied STEP. `vehicle.webp` and `vehicle-mobile.webp` are renders of that geometry used as loading posters. See `MODEL_PLAN.md` for conversion details.
