@@ -60,8 +60,7 @@ no backend for either image animation or an optional GLB presentation.
 ## Current state
 
 The homepage now contains an interactive 3D panel of the supplied assembly,
-using a self-hosted model-viewer 4.3.1 component. Visitors can rotate and zoom the car, with a Reset view button. Mobile vertical swipes remain
-available for page scrolling. The camera target is locked to the center: pan and tap-to-refocus are disabled to prevent the car leaving the panel. Zoom is limited to 85–150% of the fitted camera distance. There is no automatic rotation or scroll-driven
+using a dedicated Three.js 0.183.2 canvas with OrbitControls. Visitors can rotate and zoom the car, with a Reset view button. Touch drag rotates and pinch zooms inside the car panel; the surrounding page remains scrollable. The camera target is locked to the center: pan and tap-to-refocus are disabled to prevent the car leaving the panel. Zoom is limited to 85–150% of the fitted camera distance. There is no automatic rotation or scroll-driven
 movement of the interactive panel.
 
 The original 36.45 MB GLB was simplified with glTF Transform (target ratio
@@ -71,10 +70,12 @@ original colors and orientation preserved. This is a presentation model,
 not a replacement for the engineering source.
 
 Responsive transparent WebP posters (67 KB desktop, 38 KB mobile) show
-while loading. An independent image outside the WebGL component remains visible until the model loads. If the component, network, or WebGL rendering fails, that image stays visible with a status message. Cached-load events are handled even when they precede script initialization. The viewer and model are self-hosted; no CDN is needed at runtime.
+while loading. An independent image outside the WebGL component remains visible until the model loads. If the component, network, or WebGL rendering fails, that image stays visible with a status message. The GLTF loader and rendering callbacks are registered before requesting the model. The viewer and model are self-hosted; no CDN is needed at runtime.
 The original CAD sources remain excluded from Git and deployment.
 
-Reference: [model-viewer camera controls](https://modelviewer.dev/examples/stagingandcameras/),
+Reference: [Three.js OrbitControls](https://threejs.org/docs/#OrbitControls),
 [occt-import-js import and triangulation documentation](https://github.com/kovacsv/occt-import-js).
 
-The image-to-3D handoff validates actual canvas alpha pixels rather than trusting a load event. The viewer renders behind the image while initializing; a blank canvas leaves the independent vehicle image visible.
+The image-to-3D handoff checks alpha pixels directly from the framebuffer after drawing. The canvas is dedicated to this panel and continuously redraws while the page is visible. ResizeObserver updates the camera and drawing size together. A lost WebGL context shows the independent image; after restoration the scene redraws and the image is dismissed only if pixels are visible. Pixel ratio is capped at 1.5 and no HDR environment maps or shadow buffers are loaded.
+
+Regression checks are checked in at `scripts/check-vehicle.py`. They inspect actual framebuffer pixels across reloads, keyboard controls, resize, idle, and scrolling, plus Chromium GPU context loss/restoration and model-download failures. Chromium and WebKit passed at desktop and mobile viewport widths. These are browser automation checks, not physical-device validation.

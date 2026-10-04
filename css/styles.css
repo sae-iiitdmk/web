@@ -1316,7 +1316,6 @@ a:hover > .icon {
   inset: 0 0 64px;
   width: 100%;
   height: calc(100% - 64px);
-  --poster-color: transparent;
 }
 .vehicle-poster,
 .vehicle-noscript {
@@ -1400,4 +1399,15 @@ a:hover > .icon {
 }
 .hero-art[data-vehicle-state="ready"] .vehicle-fallback {
   visibility: hidden;
+}
+
+#vehicle-viewer canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+#vehicle-viewer canvas:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -3px;
 }

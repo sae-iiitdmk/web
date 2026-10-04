@@ -1,0 +1,14 @@
+{
+  "name": "sae-team-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:vehicle": "esbuild js/vehicle-source.js --bundle --minify --format=esm --outfile=js/vehicle.js"
+  },
+  "dependencies": {
+    "three": "0.183.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}

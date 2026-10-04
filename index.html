@@ -17,7 +17,7 @@
       crossorigin
     />
     <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=direct-1" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -121,38 +121,7 @@
               fetchpriority="high"
             />
           </picture>
-          <model-viewer
-            id="vehicle-viewer"
-            src="assets/vehicle.glb?v=2"
-            poster="assets/vehicle.webp"
-            camera-controls
-            disable-pan
-            disable-tap
-            touch-action="pan-y"
-            camera-orbit="139deg 67deg 105%"
-            field-of-view="35deg"
-            min-camera-orbit="auto 5deg 80%"
-            max-camera-orbit="auto 175deg 160%"
-            exposure="1.1"
-            shadow-intensity="0"
-            interaction-prompt="none"
-            alt="Interactive 3D view of the SAE vehicle assembly. Drag or use arrow keys to rotate, scroll or pinch to zoom."
-            aria-describedby="vehicle-help"
-          >
-            <picture slot="poster" class="vehicle-poster">
-              <source
-                media="(max-width: 640px)"
-                srcset="assets/vehicle-mobile.webp"
-              />
-              <img
-                src="assets/vehicle.webp"
-                width="1600"
-                height="1000"
-                alt="The vehicle assembly, showing chassis, wheels and suspension"
-                fetchpriority="high"
-              />
-            </picture>
-          </model-viewer>
+          <div id="vehicle-viewer"></div>
           <div class="vehicle-toolbar">
             <p id="vehicle-help">Drag to rotate · Scroll to zoom</p>
             <button type="button" id="vehicle-reset" disabled>
@@ -468,7 +437,6 @@
         ><span>© <span data-year>2026</span> SAE IIITDM Kurnool</span>
       </div>
     </footer>
-    <script type="module" src="js/vendor/model-viewer.min.js"></script>
-    <script src="js/vehicle.js" defer></script>
+    <script type="module" src="js/vehicle.js?v=direct-1"></script>
   </body>
 </html>

@@ -79,4 +79,6 @@ References:
 - [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Configure a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-The homepage vehicle panel supports rotation, bounded zoom, and reset. It uses a self-hosted model-viewer module in `js/vendor/` and the optimized `assets/vehicle.glb`, with a rendered image while loading. See `MODEL_PLAN.md` for source and conversion details.
+The homepage vehicle panel supports rotation, bounded zoom, and reset. It uses a self-hosted Three.js canvas and the optimized `assets/vehicle.glb`, with a rendered image while loading. Edit `js/vehicle-source.js` and run `npm ci` followed by `npm run build:vehicle` to rebuild the checked-in browser bundle. See `MODEL_PLAN.md` for source and conversion details.
+
+For browser regression checks, install Python Playwright and its Chromium/WebKit browsers, then run `python scripts/check-vehicle.py http://localhost:8000/ chromium` (or `webkit`) against a local HTTP server. The checks read real canvas pixels and exercise reloads and GPU recovery.

@@ -18,3 +18,5 @@ assets/*.step
 assets/*.stp
 assets/*.SLDASM
 assets/*.SLDPRT
+
+node_modules/
