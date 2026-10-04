@@ -1,0 +1,146 @@
+---
+name: SAE IIITDM Kurnool
+description: Aspen-inspired editorial grid for the SAE student chapter.
+colors:
+  paper: "#f6f7f4"
+  ink: "#232523"
+  muted: "#575b55"
+  wash: "#e1e4de"
+  mint: "#a5f4cb"
+  on-mint: "#232523"
+  dark: "#232523"
+  on-dark: "#f6f7f4"
+  line: "#b6bcb2"
+  paper-dark-theme: "#202320"
+  ink-dark-theme: "#f0f3ed"
+  muted-dark-theme: "#b8c0b5"
+  wash-dark-theme: "#303630"
+  line-dark-theme: "#586355"
+typography:
+  display:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(120px, 17vw, 260px)"
+    fontWeight: 500
+    lineHeight: 0.85
+    letterSpacing: "-0.055em"
+  headline:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(52px, 6vw, 92px)"
+    fontWeight: 500
+    lineHeight: 1.05
+    letterSpacing: "-0.04em"
+  title:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(24px, 2.65vw, 40px)"
+    fontWeight: 500
+    lineHeight: 1.05
+    letterSpacing: "-0.04em"
+  body:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "16px"
+    lineHeight: 1.55
+  label:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "12px"
+spacing:
+  section: "clamp(24px, 4vw, 64px)"
+  mobile-section: "24px"
+  section-margin: "55px"
+  row: "32px"
+  compact: "12px"
+components:
+  text-link:
+    textColor: "{colors.ink}"
+    padding: "0 0 8px"
+  header-contact:
+    backgroundColor: "{colors.dark}"
+    textColor: "{colors.on-dark}"
+    padding: "0 24px"
+  theme-toggle:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
+    padding: "0 18px"
+  collection:
+    backgroundColor: "{colors.wash}"
+    textColor: "{colors.ink}"
+    padding: "32px"
+  collection-mint:
+    backgroundColor: "{colors.mint}"
+    textColor: "{colors.on-mint}"
+    padding: "32px"
+  lightbox:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    padding: "48px 24px 24px"
+    width: "min(90vw, 880px)"
+---
+
+# Design System: SAE IIITDM Kurnool
+
+## Overview
+
+**Creative North Star: “Aspen's editorial grid, adapted to SAE.”**
+
+The user-selected Aspen Search reference sets the visual world: oversized Manrope lettering, flat paper and charcoal planes, mint accents, and thin continuous dividers. The supplied SAE logo sheet anchors the identity; its cropped monograms provide artwork without invented team photography.
+
+Key characteristics:
+
+- Large, tightly spaced typography against compact utility labels.
+- Edge-to-edge divided grids with generous internal space.
+- Scroll-linked monogram movement with static and reduced-motion fallbacks.
+
+## Colors
+
+### Primary
+
+Mint highlights invitations and selected text. Its fixed dark foreground keeps these surfaces readable in both themes.
+
+### Neutral
+
+Paper and ink form the page foundation. Wash separates artwork and collections; muted supports descriptive copy; line marks secondary divisions. Charcoal blocks retain their light foreground in both themes.
+
+The five `*-dark-theme` frontmatter colors replace paper, ink, muted, wash, and line under `data-theme="dark"`. Mint, on-mint, dark, and on-dark remain fixed. Theme selection follows the device until locally overridden using `sae-theme`.
+
+**The Paired Surface Rule.** Always pair mint with on-mint and dark with on-dark rather than the current page foreground.
+
+## Typography
+
+Display and body share self-hosted variable **Manrope**, with a sans-serif fallback. The WOFF2 asset is `assets/fonts/manrope-latin.woff2`; the declared weight range is 400–700 and font display is swap.
+
+Frontmatter records the masthead, major section heading, note title, body, and label roles. General headings use balanced wrapping. The chapter subline uses `clamp(25px, 3.3vw, 50px)` and line height 1.15; inner-page display headings use `clamp(85px, 10vw, 160px)`. Body paragraphs cap at 65ch; article paragraphs cap at 60ch.
+
+At mobile widths the masthead uses `clamp(120px, 35vw, 240px)`; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
+
+## Layout
+
+Use full-width sections rather than a centered card stack. The desktop hero grid is 2:1:1 with its artwork spanning the two right columns; rows are `clamp(400px, 46vw, 600px)` and 350px. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
+
+Section padding follows the frontmatter section token. Below 768px it becomes 24px, major grids stack, and collections become one column. The mobile hero keeps two lower panels beside each other after full-width title, artwork, and statement rows. At 1150px and below the clock hides and header spacing tightens. At 360px and below controls and hero copy tighten further. Above 1800px the body caps at 1800px with side borders.
+
+The sticky header is 76px tall, or 66px below 768px. Its layer is 10; the mobile navigation is fixed immediately below it at layer 9. Journal navigation is sticky on desktop and static on mobile.
+
+## Elevation & Depth
+
+No box shadows are implemented. Flat tonal blocks, one-pixel divisions, oversized type, and clipped artwork establish depth. The native artwork dialog uses an opaque dark translucent backdrop (`rgb(10 15 10 / 0.8)`) rather than a floating card shadow.
+
+## Shapes
+
+Square corners and continuous one-pixel rules define the system. Do not add rounded cards or gradients. Artwork regions clip oversized monograms; logo variants use 200% background sizing to crop the supplied sheet. Gallery collection panels share borders rather than leaving card gutters.
+
+## Components
+
+- **Navigation and controls:** compact text, theme icon button, dark contact link, and underlined current/hover desktop route. Mobile Menu becomes Close while expanded; link selection, Escape, and returning to desktop close it. Escape returns focus to the toggle.
+- **Text and block links:** fine underline or top rule with an arrow that shifts 3px right/up on hover. Use these existing action patterns rather than inventing a filled primary button.
+- **Keyboard focus:** links, buttons, and summaries use a 3px current-color outline offset by 5px. The skip link appears on focus above the header.
+- **Discipline details:** native `details`/`summary`, thin top and final bottom rules, 28px vertical summary padding, and a plus icon rotating 45 degrees when open. Topic tags are small labels with bottom rules, not pills.
+- **Notes and collections:** notes are ruled grid rows; collections are flat adjacent panels in wash, charcoal, or mint. Hovered note rows use wash. Maintain explicit captions for unavailable photography.
+- **Artwork dialog:** native modal, frontmatter sizing, maximum height 95dvh, contained image at maximum 75dvh, close control, centered caption, and outside-click dismissal. Native Escape behavior is retained.
+- **Monogram motion:** native CSS scroll timelines move the hero mark from `translateX(0) rotate(-8deg)` to `translateX(-38%) rotate(12deg)` across the first 1100px of root scrolling. The team mark moves from `translateX(10%) rotate(5deg)` to `translateX(-12%) rotate(-5deg)` across its view timeline. Unsupported browsers retain static artwork. Reduced motion disables animations/transitions and smooth scrolling. The dotted wheel canvas redraws only on resize, with device-pixel ratio capped at 2.
+
+## Do's and Don'ts
+
+- **Do** preserve Manrope, divided grids, fixed surface/foreground pairs, and the supplied identity artwork.
+- **Do** keep keyboard, native details/dialog behavior, dark theme, and reduced-motion fallbacks intact.
+- **Do** contain long headings within their grid columns on narrow screens.
+- **Don't** add rounded card stacks, gradients, or decorative shadows to this visual world.
+- **Don't** use fictional photographs, metrics, or achievements as visual proof.

@@ -6,7 +6,7 @@ build command, database, or application server is required for hosting.
 ## Files
 
 - `index.html`: home, about, activities, and update previews.
-- `blogs.html`: update cards.
+- `blogs.html`: engineering field notes.
 - `gallery.html`: gallery layout and image lightbox.
 - `css/styles.css`: shared styles and responsive layouts.
 - `js/main.js`: mobile menu, scrolling, animations, and lightbox.
@@ -22,17 +22,32 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open <http://127.0.0.1:8000>. Stop the server with Ctrl+C.
 
-## Current content status
+## Design and content
 
-The pages are a draft. Social/contact links and article links using `href="#"`
-need real destinations. The gallery contains emoji placeholders rather than
-photos. Existing event dates, participation claims, awards, and attendance
-figures need confirmation by the team before publication. There is no member
-roster yet.
+The site uses an Aspen Search-inspired divided grid, oversized Manrope type,
+charcoal/mint panels, and scroll-linked movement of the supplied team monogram.
+Fonts and icons are self-hosted; there is no external runtime dependency.
 
-For an informational team site, prioritize the about section, verified team
-members/roles, projects, official social links, contact details, and photos.
-Keep blogs only if the team intends to maintain them.
+- Home: chapter introduction, engineering disciplines, teamwork, and verified links.
+- Field notes (`blogs.html`): complete educational articles on design, testing, and documentation.
+- Gallery: supplied logo artwork with a keyboard-accessible viewer and clearly marked future photo collections.
+
+The mobile menu, native disclosure panels, light/dark theme switch, and artwork
+viewer work without a framework. Motion respects reduced-motion preferences;
+unsupported scroll timelines fall back to a static logo. The main content and
+links remain available without JavaScript.
+
+Team photos, a confirmed roster, official social URLs/contact email, and the
+vehicle STEP/render have not yet been supplied. Add real content before making
+claims about people, achievements, or competitions. `DESIGN.md` documents the
+visual system; `PRODUCT.md` records the known product facts.
+
+## Assets
+
+`assets/logo.jpeg` is the original team logo sheet. The header and home artwork
+use its variants through CSS positioning without modifying the original file.
+Manrope is distributed under the SIL Open Font License; Tabler icons use MIT.
+Their licenses are included in `assets/fonts/` and `assets/icons/`.
 
 ## GitHub Pages deployment
 

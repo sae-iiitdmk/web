@@ -1,202 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SAE Club at IIITDM Kurnool - Society of Automotive Engineers student chapter fostering innovation in automotive engineering.">
-  <title>SAE Club | IIITDM Kurnool</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">SAE</div>
-        <span>SAE IIITDM</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-      <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <p class="subtitle">Society of Automotive Engineers</p>
-          <h1>Driving Innovation at IIITDM Kurnool</h1>
-          <p>We are a passionate community of engineering students dedicated to advancing mobility technology. From electric vehicles to autonomous systems, we build the future of transportation.</p>
-          <div class="btn-group">
-            <a href="#about" class="btn btn-primary">Learn More</a>
-            <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SAE student chapter at IIITDM Kurnool. Explore automotive engineering, our community, and field notes."
+    />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Home | SAE IIITDM Kurnool</title>
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SAE IIITDM Kurnool home"
+        ><span class="brand-mark" aria-hidden="true"></span
+        ><span class="brand-name">SAE <span>IIITDM KURNOOL</span></span></a
+      >
+      <span class="local-time"
+        ><time id="local-time">Kurnool, India</time><span>IN</span></span
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a
+        ><a href="index.html#work">Our work</a><a href="blogs.html">Notes</a
+        ><a href="gallery.html">Gallery</a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch color theme"
+        aria-pressed="false"
+      >
+        <img
+          class="icon"
+          src="assets/icons/moon.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+      <a class="header-contact" href="index.html#connect"
+        ><span>Connect</span
+        ><img
+          class="icon"
+          src="assets/icons/arrow-up-right.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+      /></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+      >
+        <span>Menu</span
+        ><img
+          class="icon"
+          src="assets/icons/menu-2.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </header>
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="index.html#about">About</a><a href="index.html#work">Our work</a
+      ><a href="blogs.html">Notes</a><a href="gallery.html">Gallery</a
+      ><a href="index.html#connect">Connect</a>
+    </nav>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-title">
+          <div class="hero-topline">
+            <span>Student engineering. Shared ambition.</span
+            ><a href="#about" class="scroll-cue"
+              >Explore
+              <img
+                class="icon"
+                src="assets/icons/arrow-down.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+            /></a>
+          </div>
+          <h1 id="hero-title">
+            SAE<span class="hero-place">IIITDM Kurnool</span>
+          </h1>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <canvas class="wheel-field"></canvas>
+          <div class="moving-mark">
+            <div class="logo-crop logo-outline"></div>
+          </div>
+          <span class="art-caption">Ideas in motion.</span>
+        </div>
+        <div class="hero-statement">
+          <p>From the first sketch<br />to what comes next.</p>
+          <span>Design. Build. Learn.</span>
+        </div>
+        <div class="hero-intro">
+          <p>
+            A student community exploring automotive engineering through ideas,
+            collaboration, and hands-on learning.
+          </p>
+          <a class="block-link" href="#about"
+            ><span>Meet the chapter</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+        <div class="hero-accent">
+          <p>Engineering is a team sport.<br />Bring your curiosity.</p>
+          <div class="accent-bottom">
+            <span>Society of Automotive<br />Engineers</span
+            ><a class="block-link" href="#work"
+              ><span>Discover our work</span
+              ><img
+                class="icon"
+                src="assets/icons/arrow-up-right.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+            /></a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-logo-container">
-            <span>SAE</span>
-          </div>
+      </section>
+      <section id="about" class="about-section split-section">
+        <div class="section-title">
+          <h2>Built on<br />curiosity.</h2>
+          <span class="section-small">About SAE IIITDM Kurnool</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>About SAE IIITDM</h2>
-          <p>The Society of Automotive Engineers (SAE) collegiate chapter at IIITDM Kurnool is a student-run organization that bridges the gap between classroom learning and real-world engineering challenges.</p>
-          <p>We participate in national and international competitions, organize workshops, and collaborate on projects that push the boundaries of automotive engineering. Our members gain hands-on experience in design, manufacturing, and innovation.</p>
-          <div class="btn-group" style="margin-top: 2rem;">
-            <a href="blogs.html" class="btn btn-primary">Read Our Blog</a>
-          </div>
+        <div class="section-copy">
+          <p class="lead">The classroom is<br />just the starting line.</p>
+          <p>
+            We are the SAE student chapter at the Indian Institute of
+            Information Technology, Design and Manufacturing Kurnool. A place
+            for students to explore how things move, how they are made, and how
+            to make them better.
+          </p>
+          <p>
+            Our interests meet at the intersection of automotive design,
+            practical engineering, and working together. Ideas grow through
+            discussion, experimentation, and sharing what we learn.
+          </p>
+          <a class="text-link" href="https://iiitk.ac.in"
+            ><span>Explore our institute</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
         </div>
-        <div class="about-image">
-          <!-- Placeholder for team/project image -->
+      </section>
+      <section id="work" class="work-section">
+        <div class="work-heading">
+          <h2>Think it.<br />Make it.</h2>
+          <p>Different disciplines.<br />One shared drive.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="features section">
-    <div class="container">
-      <div class="section-header">
-        <h2>What We Do</h2>
-        <p>Empowering students through hands-on experience and collaborative innovation</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🏎️</div>
-          <h3>Competitions</h3>
-          <p>We participate in BAJA SAE, Formula Student, and other prestigious automotive competitions.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔧</div>
-          <h3>Workshops</h3>
-          <p>Regular hands-on workshops on CAD, manufacturing, electric powertrains, and more.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🚀</div>
-          <h3>Projects</h3>
-          <p>From electric go-karts to autonomous drones, we turn ambitious ideas into reality.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤝</div>
-          <h3>Networking</h3>
-          <p>Connect with industry professionals, alumni, and fellow automotive enthusiasts.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Blogs Preview -->
-  <section class="blogs-section section">
-    <div class="container">
-      <div class="section-header">
-        <h2 style="color: var(--primary-800);">Latest Updates</h2>
-        <p style="color: var(--gray-600);">Stay tuned with our activities, achievements, and insights</p>
-      </div>
-      <div class="blogs-grid">
-        <article class="blog-card">
-          <div class="blog-card-image">📰</div>
-          <div class="blog-card-content">
-            <div class="blog-card-meta">
-              <span>Dec 2024</span>
-              <span>•</span>
-              <span>Team Update</span>
+        <div class="work-list">
+          <details open>
+            <summary>
+              <span>Design &amp; engineering</span
+              ><img
+                class="icon"
+                src="assets/icons/plus.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+              />
+            </summary>
+            <div class="discipline-content">
+              <p>
+                Where an idea takes shape. Explore CAD, component design,
+                vehicle systems, and the decisions that connect them.
+              </p>
+              <ul>
+                <li>CAD &amp; modelling</li>
+                <li>Vehicle systems</li>
+                <li>Design reviews</li>
+              </ul>
             </div>
-            <h3>BAJA SAE 2025 Preparations</h3>
-            <p>Our team is gearing up for the upcoming BAJA SAE India competition with an all-new design...</p>
-            <a href="blogs.html" class="blog-card-link">Read More →</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <div class="blog-card-image">🏆</div>
-          <div class="blog-card-content">
-            <div class="blog-card-meta">
-              <span>Nov 2024</span>
-              <span>•</span>
-              <span>Achievement</span>
+          </details>
+          <details>
+            <summary>
+              <span>Build &amp; experiment</span
+              ><img
+                class="icon"
+                src="assets/icons/plus.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+              />
+            </summary>
+            <div class="discipline-content">
+              <p>
+                Turn questions into practical exploration. Learn about
+                manufacturing, materials, assembly, and testing through the
+                engineering process.
+              </p>
+              <ul>
+                <li>Materials &amp; fabrication</li>
+                <li>Assembly</li>
+                <li>Testing &amp; iteration</li>
+              </ul>
             </div>
-            <h3>Workshop on EV Technology</h3>
-            <p>Successfully conducted a workshop on electric vehicle powertrains attended by 100+ students...</p>
-            <a href="blogs.html" class="blog-card-link">Read More →</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <div class="blog-card-image">⚡</div>
-          <div class="blog-card-content">
-            <div class="blog-card-meta">
-              <span>Oct 2024</span>
-              <span>•</span>
-              <span>Project</span>
+          </details>
+          <details>
+            <summary>
+              <span>Learn &amp; share</span
+              ><img
+                class="icon"
+                src="assets/icons/plus.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+              />
+            </summary>
+            <div class="discipline-content">
+              <p>
+                Knowledge travels further when it is shared. Bring a question,
+                discuss an approach, and document the lessons for the next
+                person.
+              </p>
+              <ul>
+                <li>Technical discussions</li>
+                <li>Peer learning</li>
+                <li>Field notes</li>
+              </ul>
             </div>
-            <h3>Electric Go-Kart Unveiled</h3>
-            <p>Our electric go-kart project reaches a major milestone with successful track testing...</p>
-            <a href="blogs.html" class="blog-card-link">Read More →</a>
-          </div>
-        </article>
-      </div>
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="blogs.html" class="btn btn-secondary">View All Posts</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <div class="nav-logo-icon">SAE</div>
-            <span>SAE IIITDM</span>
-          </a>
-          <p>Society of Automotive Engineers student chapter at Indian Institute of Information Technology, Design and Manufacturing Kurnool.</p>
+          </details>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
+      </section>
+      <section class="team-section split-section" id="team">
+        <div class="team-art" aria-hidden="true">
+          <div class="logo-crop logo-flat"></div>
+          <span>Many perspectives. One team.</span>
         </div>
-        <div class="footer-links">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Email Us</a></li>
-          </ul>
+        <div class="team-copy">
+          <h2>No one<br />builds alone.</h2>
+          <p>
+            Good engineering depends on more than one point of view. Design,
+            manufacturing, electronics, and documentation all have a place in
+            the process.
+          </p>
+          <p>
+            Whether you are starting with a question or bringing a skill to
+            share, curiosity is a good place to begin.
+          </p>
+          <a class="text-link" href="#connect"
+            ><span>Find us online</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
         </div>
-        <div class="footer-links">
-          <h4>Institute</h4>
-          <ul>
-            <li><a href="https://iiitk.ac.in" target="_blank">IIITDM Kurnool</a></li>
-            <li><a href="#">Student Clubs</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      </section>
+      <section class="notes-preview">
+        <div class="section-bar">
+          <h2>From the notebook.</h2>
+          <a class="text-link" href="blogs.html"
+            ><span>All field notes</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+        <a class="note-row" href="blogs.html#design"
+          ><span class="note-category">Design</span>
+          <h3>Before the first part is made.</h3>
+          <img
+            class="icon"
+            src="assets/icons/arrow-up-right.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true" /></a
+        ><a class="note-row" href="blogs.html#iteration"
+          ><span class="note-category">Process</span>
+          <h3>Build. Test. Ask better questions.</h3>
+          <img
+            class="icon"
+            src="assets/icons/arrow-up-right.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true" /></a
+        ><a class="note-row" href="blogs.html#documentation"
+          ><span class="note-category">Teamwork</span>
+          <h3>Leave a trail for the next engineer.</h3>
+          <img
+            class="icon"
+            src="assets/icons/arrow-up-right.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true"
+        /></a>
+      </section>
+      <section id="connect" class="connect-section">
+        <div>
+          <h2>Let's build<br />what's next.</h2>
+          <p>
+            Follow the chapter’s website development or explore the institute we
+            call home.
+          </p>
+        </div>
+        <div class="connect-links">
+          <a class="connect-link" href="https://github.com/sae-iiitdmk/website"
+            ><span>Find us on GitHub</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true" /></a
+          ><a class="connect-link" href="https://iiitk.ac.in"
+            ><span>IIITDM Kurnool</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true" /></a
+          ><a class="connect-link" href="gallery.html"
+            ><span>Explore the gallery</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="footer-name" href="index.html"
+          >SAE.<span>IIITDM Kurnool</span></a
+        >
+        <div class="footer-nav">
+          <a href="index.html#about">About the team</a
+          ><a href="blogs.html">Field notes</a><a href="gallery.html">Gallery</a
+          ><a href="https://github.com/sae-iiitdmk/website"
+            >GitHub
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true" /></a
+          ><a
+            href="https://iiitk.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Our institute
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 SAE IIITDM Kurnool. All rights reserved.</p>
+        <span>Society of Automotive Engineers</span
+        ><span>Built together. In Kurnool.</span
+        ><span>© <span data-year>2026</span> SAE IIITDM Kurnool</span>
       </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

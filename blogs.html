@@ -1,187 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SAE Club Blog - Updates, insights, and stories from SAE IIITDM Kurnool">
-    <title>Blogs | SAE Club IIITDM Kurnool</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <div class="nav-logo-icon">SAE</div>
-                <span>SAE IIITDM</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blogs.html" class="active">Blogs</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1>Our Blog</h1>
-            <p>Updates, insights, and stories from the SAE community at IIITDM Kurnool</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Engineering field notes on design, testing, iteration, and shared documentation."
+    />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Field notes | SAE IIITDM Kurnool</title>
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SAE IIITDM Kurnool home"
+        ><span class="brand-mark" aria-hidden="true"></span
+        ><span class="brand-name">SAE <span>IIITDM KURNOOL</span></span></a
+      >
+      <span class="local-time"
+        ><time id="local-time">Kurnool, India</time><span>IN</span></span
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a
+        ><a href="index.html#work">Our work</a
+        ><a href="blogs.html" aria-current="page">Notes</a
+        ><a href="gallery.html">Gallery</a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch color theme"
+        aria-pressed="false"
+      >
+        <img
+          class="icon"
+          src="assets/icons/moon.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+      <a class="header-contact" href="index.html#connect"
+        ><span>Connect</span
+        ><img
+          class="icon"
+          src="assets/icons/arrow-up-right.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+      /></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+      >
+        <span>Menu</span
+        ><img
+          class="icon"
+          src="assets/icons/menu-2.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
     </header>
-
-    <!-- Blog Grid -->
-    <section class="blogs-section section">
-        <div class="container">
-            <div class="blogs-grid">
-
-                <article class="blog-card">
-                    <div class="blog-card-image">🏎️</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Dec 20, 2024</span>
-                            <span>•</span>
-                            <span>Competition</span>
-                        </div>
-                        <h3>BAJA SAE 2025: The Road Ahead</h3>
-                        <p>Our team is deep into preparations for BAJA SAE India 2025. This year's vehicle features an
-                            all-new suspension geometry and a lightweight chassis design that promises improved
-                            performance on rough terrain.</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-image">⚡</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Dec 10, 2024</span>
-                            <span>•</span>
-                            <span>Technology</span>
-                        </div>
-                        <h3>The Future of Electric Mobility</h3>
-                        <p>A deep dive into how electric vehicle technology is revolutionizing the automotive industry
-                            and what it means for aspiring engineers at our institute.</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-image">🔧</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Nov 28, 2024</span>
-                            <span>•</span>
-                            <span>Workshop</span>
-                        </div>
-                        <h3>CAD Workshop Success</h3>
-                        <p>Over 80 students participated in our hands-on SolidWorks workshop, learning
-                            professional-grade 3D modeling techniques from industry experts.</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-image">🏆</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Nov 15, 2024</span>
-                            <span>•</span>
-                            <span>Achievement</span>
-                        </div>
-                        <h3>Design Presentation Award</h3>
-                        <p>Our team secured 2nd place in the design presentation category at the regional automotive
-                            challenge, showcasing our engineering excellence.</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-image">🚀</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Oct 30, 2024</span>
-                            <span>•</span>
-                            <span>Project</span>
-                        </div>
-                        <h3>Electric Go-Kart: First Run</h3>
-                        <p>After months of hard work, our electric go-kart project completed its first successful test
-                            run on the campus track. A milestone moment for the team!</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-image">👥</div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>Oct 15, 2024</span>
-                            <span>•</span>
-                            <span>Community</span>
-                        </div>
-                        <h3>New Member Orientation</h3>
-                        <p>We welcomed 50 new members to the SAE family this semester. The orientation included team
-                            introductions, project showcases, and hands-on activities.</p>
-                        <a href="#" class="blog-card-link">Read More →</a>
-                    </div>
-                </article>
-
-            </div>
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="index.html#about">About</a><a href="index.html#work">Our work</a
+      ><a href="blogs.html">Notes</a><a href="gallery.html">Gallery</a
+      ><a href="index.html#connect">Connect</a>
+    </nav>
+    <main id="main">
+      <section class="page-intro">
+        <h1>Field<br />notes.</h1>
+        <div>
+          <p>
+            Thoughts from the engineering notebook. A closer look at the process
+            behind designing, building, and learning together.
+          </p>
+          <a href="#design" class="scroll-cue"
+            >Start reading
+            <img
+              class="icon"
+              src="assets/icons/arrow-down.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo">
-                        <div class="nav-logo-icon">SAE</div>
-                        <span>SAE IIITDM</span>
-                    </a>
-                    <p>Society of Automotive Engineers student chapter at Indian Institute of Information Technology,
-                        Design and Manufacturing Kurnool.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Email Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Institute</h4>
-                    <ul>
-                        <li><a href="https://iiitk.ac.in" target="_blank">IIITDM Kurnool</a></li>
-                        <li><a href="#">Student Clubs</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SAE IIITDM Kurnool. All rights reserved.</p>
-            </div>
+      </section>
+      <div class="journal-layout">
+        <nav class="journal-nav" aria-label="Article navigation">
+          <span>In this notebook</span
+          ><a href="#design">Design before manufacture</a
+          ><a href="#iteration">Testing and iteration</a
+          ><a href="#documentation">Shared documentation</a>
+        </nav>
+        <div class="journal-articles">
+          <article id="design">
+            <span class="note-category">Design</span>
+            <h2>Before the first<br />part is made.</h2>
+            <p class="lead">
+              A useful design starts with the question it needs to answer.
+            </p>
+            <p>
+              Before opening a CAD model, write down the purpose of the part.
+              What does it connect to? What loads might it experience? How will
+              it be manufactured, assembled, and inspected?
+            </p>
+            <p>
+              These questions turn a shape into an engineering decision. Start
+              with a sketch and a short list of constraints. Then use the model
+              to explore alternatives rather than treating the first version as
+              the finished answer.
+            </p>
+            <h3>Look beyond the individual part.</h3>
+            <p>
+              A component belongs to a system. Clearances, mounting points,
+              available tools, and access for maintenance matter alongside
+              geometry. Reviewing a design with someone from another discipline
+              can reveal questions that were easy to overlook.
+            </p>
+          </article>
+          <article id="iteration">
+            <span class="note-category">Process</span>
+            <h2>Build. Test.<br />Ask better questions.</h2>
+            <p class="lead">
+              A test is most useful when you know what you want to learn.
+            </p>
+            <p>
+              Choose a specific question before running a test. Define what you
+              will observe, what conditions you will use, and what result would
+              lead you to change the design. Record the setup so the next test
+              can be compared fairly.
+            </p>
+            <p>
+              When a result differs from an expectation, inspect the assumptions
+              as well as the component. A loose connection, a measurement error,
+              or a change in the test conditions can alter what the result
+              means.
+            </p>
+            <h3>Make the next version deliberate.</h3>
+            <p>
+              Document the observation, propose an explanation, and change one
+              relevant variable where practical. Iteration becomes more valuable
+              when the team can explain why each version is different.
+            </p>
+          </article>
+          <article id="documentation">
+            <span class="note-category">Teamwork</span>
+            <h2>Leave a trail for<br />the next engineer.</h2>
+            <p class="lead">
+              The reasoning behind a decision is part of the work.
+            </p>
+            <p>
+              A model or drawing shows what was made. A short design note
+              explains why. Keep the requirements, alternatives considered,
+              important dimensions, and unresolved questions close to the
+              project files.
+            </p>
+            <p>
+              Clear file names and revision notes make it easier to collaborate.
+              Record what changed and why, and make sure the drawing and model
+              refer to the same version before anyone begins manufacturing.
+            </p>
+            <h3>Keep notes useful, not elaborate.</h3>
+            <p>
+              A few specific sentences, an annotated sketch, and a test
+              observation are often more helpful than a long report written
+              after the details have been forgotten. Write for the person who
+              will pick up the work next.
+            </p>
+          </article>
         </div>
+      </div>
+      <section class="small-cta">
+        <h2>More to explore.</h2>
+        <a class="text-link" href="gallery.html"
+          ><span>Visit the gallery</span
+          ><img
+            class="icon"
+            src="assets/icons/arrow-up-right.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true"
+        /></a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="footer-name" href="index.html"
+          >SAE.<span>IIITDM Kurnool</span></a
+        >
+        <div class="footer-nav">
+          <a href="index.html#about">About the team</a
+          ><a href="blogs.html">Field notes</a><a href="gallery.html">Gallery</a
+          ><a href="https://github.com/sae-iiitdmk/website"
+            >GitHub
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true" /></a
+          ><a
+            href="https://iiitk.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Our institute
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Society of Automotive Engineers</span
+        ><span>Built together. In Kurnool.</span
+        ><span>© <span data-year>2026</span> SAE IIITDM Kurnool</span>
+      </div>
     </footer>
-
-    <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

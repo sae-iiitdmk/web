@@ -1,189 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="SAE Club Gallery - Photos and memories from SAE IIITDM Kurnool events and projects">
-    <title>Gallery | SAE Club IIITDM Kurnool</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <div class="nav-logo-icon">SAE</div>
-                <span>SAE IIITDM</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1>Gallery</h1>
-            <p>Moments captured from our events, competitions, and behind-the-scenes work</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Team identity and a growing visual collection from SAE IIITDM Kurnool."
+    />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Gallery | SAE IIITDM Kurnool</title>
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SAE IIITDM Kurnool home"
+        ><span class="brand-mark" aria-hidden="true"></span
+        ><span class="brand-name">SAE <span>IIITDM KURNOOL</span></span></a
+      >
+      <span class="local-time"
+        ><time id="local-time">Kurnool, India</time><span>IN</span></span
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a
+        ><a href="index.html#work">Our work</a><a href="blogs.html">Notes</a
+        ><a href="gallery.html" aria-current="page">Gallery</a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch color theme"
+        aria-pressed="false"
+      >
+        <img
+          class="icon"
+          src="assets/icons/moon.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+      <a class="header-contact" href="index.html#connect"
+        ><span>Connect</span
+        ><img
+          class="icon"
+          src="assets/icons/arrow-up-right.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+      /></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+      >
+        <span>Menu</span
+        ><img
+          class="icon"
+          src="assets/icons/menu-2.svg"
+          width="24"
+          height="24"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
     </header>
-
-    <!-- Gallery Grid -->
-    <section class="gallery-section section">
-        <div class="container">
-            <div class="gallery-grid">
-
-                <div class="gallery-item" data-caption="BAJA SAE Competition 2024">
-                    <div class="gallery-placeholder">🏎️</div>
-                    <div class="gallery-item-caption">
-                        <h4>BAJA SAE Competition 2024</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Team Workshop Session">
-                    <div class="gallery-placeholder">🔧</div>
-                    <div class="gallery-item-caption">
-                        <h4>Team Workshop Session</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Electric Go-Kart Testing">
-                    <div class="gallery-placeholder">⚡</div>
-                    <div class="gallery-item-caption">
-                        <h4>Electric Go-Kart Testing</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Design Review Meeting">
-                    <div class="gallery-placeholder">📋</div>
-                    <div class="gallery-item-caption">
-                        <h4>Design Review Meeting</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Podium Finish">
-                    <div class="gallery-placeholder">🏆</div>
-                    <div class="gallery-item-caption">
-                        <h4>Podium Finish</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Fabrication in Progress">
-                    <div class="gallery-placeholder">⚙️</div>
-                    <div class="gallery-item-caption">
-                        <h4>Fabrication in Progress</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Team Photo 2024">
-                    <div class="gallery-placeholder">👥</div>
-                    <div class="gallery-item-caption">
-                        <h4>Team Photo 2024</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="CAD Workshop">
-                    <div class="gallery-placeholder">💻</div>
-                    <div class="gallery-item-caption">
-                        <h4>CAD Workshop</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Vehicle Unveiling">
-                    <div class="gallery-placeholder">🚗</div>
-                    <div class="gallery-item-caption">
-                        <h4>Vehicle Unveiling</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Industry Visit">
-                    <div class="gallery-placeholder">🏭</div>
-                    <div class="gallery-item-caption">
-                        <h4>Industry Visit</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Engine Testing">
-                    <div class="gallery-placeholder">🔩</div>
-                    <div class="gallery-item-caption">
-                        <h4>Engine Testing</h4>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-caption="Certificate Ceremony">
-                    <div class="gallery-placeholder">📜</div>
-                    <div class="gallery-item-caption">
-                        <h4>Certificate Ceremony</h4>
-                    </div>
-                </div>
-
-            </div>
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="index.html#about">About</a><a href="index.html#work">Our work</a
+      ><a href="blogs.html">Notes</a><a href="gallery.html">Gallery</a
+      ><a href="index.html#connect">Connect</a>
+    </nav>
+    <main id="main">
+      <section class="page-intro gallery-intro">
+        <h1>In the<br />making.</h1>
+        <div>
+          <p>
+            The people, ideas, and details behind the chapter. Our visual story
+            starts here.
+          </p>
+          <span class="gallery-status"
+            >The photo collection is coming together.</span
+          >
         </div>
-    </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightbox-image">
+      </section>
+      <section class="identity-section">
+        <div class="identity-copy">
+          <h2>A mark<br />of our own.</h2>
+          <p>
+            Our team identity, in its original forms. Select the artwork to take
+            a closer look.
+          </p>
+          <span class="section-small">Team identity</span>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo">
-                        <div class="nav-logo-icon">SAE</div>
-                        <span>SAE IIITDM</span>
-                    </a>
-                    <p>Society of Automotive Engineers student chapter at Indian Institute of Information Technology,
-                        Design and Manufacturing Kurnool.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blogs.html">Blogs</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Email Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Institute</h4>
-                    <ul>
-                        <li><a href="https://iiitk.ac.in" target="_blank">IIITDM Kurnool</a></li>
-                        <li><a href="#">Student Clubs</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SAE IIITDM Kurnool. All rights reserved.</p>
-            </div>
+        <button
+          class="identity-image"
+          type="button"
+          data-lightbox="assets/logo.jpeg"
+          data-caption="Original team logo artwork"
+          aria-label="View original team logo artwork"
+        >
+          <img
+            src="assets/logo.jpeg"
+            width="1600"
+            height="1600"
+            alt="Team monogram in red and gold, flat color, outline, and gold variants"
+            loading="lazy"
+          /><span
+            >View artwork
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></span>
+        </button>
+      </section>
+      <section class="collection-section">
+        <div class="section-bar">
+          <h2>Room for the story.</h2>
+          <p>Real moments, as they arrive.</p>
         </div>
+        <div class="collection-grid">
+          <div class="collection collection-dark">
+            <h3>At the<br />workbench.</h3>
+            <p>Design sketches, parts, and the process of making.</p>
+            <span>Photos to follow</span>
+          </div>
+          <div class="collection collection-mint">
+            <h3>Out on<br />the track.</h3>
+            <p>A space for vehicle testing and engineering in motion.</p>
+            <span>Photos to follow</span>
+          </div>
+          <div class="collection">
+            <h3>Behind<br />the team.</h3>
+            <p>The faces and shared moments that make a chapter.</p>
+            <span>Photos to follow</span>
+          </div>
+        </div>
+      </section>
+      <section class="small-cta">
+        <h2>The thinking behind it.</h2>
+        <a class="text-link" href="blogs.html"
+          ><span>Read the field notes</span
+          ><img
+            class="icon"
+            src="assets/icons/arrow-up-right.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true"
+        /></a>
+      </section>
+      <dialog class="lightbox" aria-label="Team artwork viewer">
+        <button
+          type="button"
+          class="lightbox-close"
+          aria-label="Close artwork viewer"
+        >
+          <img
+            class="icon"
+            src="assets/icons/x.svg"
+            width="24"
+            height="24"
+            alt=""
+            aria-hidden="true"
+          /></button
+        ><img
+          class="lightbox-image"
+          src="assets/logo.jpeg"
+          loading="lazy"
+          width="1600"
+          height="1600"
+          alt=""
+        />
+        <p class="lightbox-caption"></p>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="footer-name" href="index.html"
+          >SAE.<span>IIITDM Kurnool</span></a
+        >
+        <div class="footer-nav">
+          <a href="index.html#about">About the team</a
+          ><a href="blogs.html">Field notes</a><a href="gallery.html">Gallery</a
+          ><a href="https://github.com/sae-iiitdmk/website"
+            >GitHub
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true" /></a
+          ><a
+            href="https://iiitk.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Our institute
+            <img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Society of Automotive Engineers</span
+        ><span>Built together. In Kurnool.</span
+        ><span>© <span data-year>2026</span> SAE IIITDM Kurnool</span>
+      </div>
     </footer>
-
-    <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
