@@ -21,20 +21,20 @@ colors:
 typography:
   display:
     fontFamily: "Manrope, sans-serif"
-    fontSize: "clamp(76px, 9vw, 144px)"
-    fontWeight: 500
-    lineHeight: 0.85
+    fontSize: "clamp(32px, 3.2vw, 52px)"
+    fontWeight: 800
+    lineHeight: 1.04
     letterSpacing: "-0.04em"
   headline:
     fontFamily: "Manrope, sans-serif"
     fontSize: "clamp(52px, 6vw, 92px)"
-    fontWeight: 500
+    fontWeight: 800
     lineHeight: 1.05
     letterSpacing: "-0.04em"
   title:
     fontFamily: "Manrope, sans-serif"
     fontSize: "clamp(24px, 2.65vw, 40px)"
-    fontWeight: 500
+    fontWeight: 800
     lineHeight: 1.05
     letterSpacing: "-0.04em"
   body:
@@ -107,11 +107,11 @@ The five `*-dark-theme` frontmatter colors replace paper, ink, muted, wash, and 
 
 ## Typography
 
-Display and body share self-hosted variable **Manrope**, with a sans-serif fallback. The WOFF2 asset is `assets/fonts/manrope-latin.woff2`; the declared weight range is 400–700 and font display is swap.
+Display and body share self-hosted variable **Manrope**, with a sans-serif fallback. The WOFF2 asset is `assets/fonts/manrope-latin.woff2`; the declared weight range is 400–800 and font display is swap.
 
 Frontmatter records the masthead, major section heading, note title, body, and label roles. General headings use balanced wrapping. The chapter subline uses `clamp(25px, 3.3vw, 50px)` and line height 1.15; inner-page display headings use `clamp(85px, 10vw, 160px)`. Body paragraphs cap at 65ch; article paragraphs cap at 60ch.
 
-At mobile widths the masthead uses 60px with the chapter name inline; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
+The home masthead spells out Society of Automotive Engineers, with a 34px stacked heading and chapter caption on mobile; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
 
 ## Layout
 

@@ -1,7 +1,7 @@
 @font-face {
   font-family: Manrope;
   src: url("../assets/fonts/manrope-latin.woff2") format("woff2");
-  font-weight: 400 700;
+  font-weight: 400 800;
   font-display: swap;
 }
 :root {
@@ -68,7 +68,7 @@ p {
 h1,
 h2,
 h3 {
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.05;
   text-wrap: balance;
@@ -267,7 +267,7 @@ body {
   font-size: clamp(120px, 17vw, 260px);
   line-height: 0.85;
   letter-spacing: -0.055em;
-  font-weight: 500;
+  font-weight: 800;
   padding: 40px 0 12px;
 }
 .hero-place {
@@ -1456,7 +1456,8 @@ a:hover > .icon {
   max-width: none;
 }
 .hero-title h1 {
-  font-size: clamp(76px, 9vw, 144px);
+  font-size: clamp(32px, 3.2vw, 52px);
+  line-height: 1.04;
   padding: 0;
   letter-spacing: -0.04em;
 }
@@ -1535,14 +1536,12 @@ a:hover > .icon {
     gap: 16px;
   }
   .hero-title h1 {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    font-size: 60px;
+    display: block;
+    font-size: 34px;
   }
   .hero-place {
     font-size: clamp(18px, 5.2vw, 24px);
-    margin-top: 0;
+    margin-top: 12px;
   }
   .hero-art {
     grid-column: 1;
@@ -1598,4 +1597,17 @@ a:hover > .icon {
 }
 .vehicle-toolbar {
   height: 72px;
+}
+
+/* Genuine 800-weight Manrope for headings and key highlights. */
+.hero-statement p,
+.hero-accent > p,
+.brand-name,
+.footer-name,
+.block-link > span,
+summary {
+  font-weight: 800;
+}
+.hero-place {
+  font-weight: 600;
 }
