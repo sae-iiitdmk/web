@@ -16,6 +16,19 @@ pixel_check = '''async canvas => await new Promise(resolve => requestAnimationFr
   }
   resolve(visible);
 }))'''
+colour_check = """async canvas => await new Promise(resolve => requestAnimationFrame(() => {
+  const gl = canvas.getContext('webgl2');
+  const pixels = new Uint8Array(canvas.width * canvas.height * 4);
+  gl.readPixels(0, 0, canvas.width, canvas.height, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+  let visible = 0, blue = 0, clipped = 0;
+  for (let i = 0; i < pixels.length; i += 4) {
+    if (pixels[i + 3] <= 200) continue;
+    visible++;
+    if (pixels[i + 2] > pixels[i] + 8) blue++;
+    if (pixels[i] > 248 && pixels[i + 1] > 248 && pixels[i + 2] > 248) clipped++;
+  }
+  resolve({visible, blue, clipped});
+}))"""
 with sync_playwright() as p:
     browser = getattr(p, engine).launch()
     for width in (1440, 390):
@@ -27,6 +40,10 @@ with sync_playwright() as p:
             page.wait_for_selector('.hero-art[data-vehicle-state="ready"]', timeout=60000)
             canvas = page.locator('#vehicle-viewer canvas')
             assert canvas.evaluate(pixel_check) > 3, 'Ready state with blank framebuffer'
+            colours = canvas.evaluate(colour_check)
+            assert colours['visible'] > 1000, colours
+            assert colours['blue'] > colours['visible'] * 0.1, 'Imported blue is washed out: ' + str(colours)
+            assert colours['clipped'] < colours['visible'] * 0.1, 'Material highlights clip to white: ' + str(colours)
             if attempt < 2:
                 page.reload()
         canvas.focus()

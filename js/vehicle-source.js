@@ -132,6 +132,9 @@ try {
   renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.5));
   renderer.setClearColor(0x000000, 0);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
+  // Preserve imported material colour instead of clipping bright parts to white.
+  renderer.toneMapping = THREE.NeutralToneMapping;
+  renderer.toneMappingExposure = 1;
   const canvas = renderer.domElement;
   canvas.tabIndex = 0;
   canvas.setAttribute("role", "img");
@@ -147,10 +150,10 @@ try {
   controls.dampingFactor = 0.1;
   controls.minPolarAngle = THREE.MathUtils.degToRad(5);
   controls.maxPolarAngle = THREE.MathUtils.degToRad(175);
-  scene.add(new THREE.HemisphereLight(0xffffff, 0x75644d, 2.2));
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x707070, 0.85));
   for (const [x, y, z, intensity] of [
-    [-3, 4, 6, 3],
-    [4, 2, -3, 1.8],
+    [-3, 4, 6, 1.6],
+    [4, 2, -3, 0.65],
   ]) {
     const light = new THREE.DirectionalLight(0xffffff, intensity);
     light.position.set(x, y, z);

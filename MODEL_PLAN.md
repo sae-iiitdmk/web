@@ -66,7 +66,7 @@ movement of the interactive panel.
 The original 36.45 MB GLB was simplified with glTF Transform (target ratio
 0.08, maximum relative error 0.003), deduplicated, and quantized to 4.38 MB.
 Geometry is centered and converted from millimeters to meters, with its
-original colors and orientation preserved. This is a presentation model,
+exported mesh colors and orientation preserved. This is a presentation model,
 not a replacement for the engineering source.
 
 Responsive transparent WebP posters (67 KB desktop, 38 KB mobile) show
@@ -81,3 +81,23 @@ The image-to-3D handoff checks alpha pixels directly from the framebuffer after 
 Regression checks are checked in at `scripts/check-vehicle.py`. They inspect actual framebuffer pixels across reloads, keyboard controls, resize, idle, and scrolling, plus Chromium GPU context loss/restoration and model-download failures. Chromium and WebKit passed at desktop and mobile viewport widths. These are browser automation checks, not physical-device validation.
 
 When browser graphics cannot initialize, the static vehicle preview remains visible and the panel asks visitors to enable graphics/hardware acceleration and relaunch their browser. CPU-based 3D rendering is intentionally not included, per the user’s preference.
+
+## Material colour audit
+
+The supplied main AP214 STEP contains 174 `COLOUR_RGB` declarations, all with
+one RGB value: `(0.792156862745098, 0.819607843137255, 0.933333333333333)`
+(approximately #cad1ee). A fresh OpenCascade import confirms that 171 of the
+297 meshes have this pale-blue colour and 126 have no assigned mesh colour.
+None of the 17,765 imported faces has an additional colour override.
+The GLB retains the imported blue in linear RGB
+`(0.5906188488, 0.6375968456, 0.8549926281)`; uncoloured parts use neutral grey.
+The native SolidWorks appearance scheme cannot be reconstructed from this
+STEP export. Restoring further colours requires a colour-preserving model
+export from the source CAD; do not invent colours for vehicle parts.
+
+The viewer uses neutral tone mapping and lower, neutral lighting to prevent
+material colours from clipping to white. A framebuffer colour check verifies
+that the blue remains visible alongside the existing viewer regression checks.
+
+SolidWorks documents body, face, and curve colour support for STEP AP214:
+https://help.solidworks.com/2026/english/SolidWorks/sldworks/c_Step_Files.htm?id=18.18.28
