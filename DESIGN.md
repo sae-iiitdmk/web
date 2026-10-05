@@ -162,3 +162,5 @@ Gallery navigation links to three named collections: Team & results, Workshop, a
 The header identifies the team as Team Monarch above the IIITDM Kurnool caption on every route. Its type and logo scale down on narrow phones to keep navigation controls visible.
 
 Contact details include a visible clickable email and a plain postal address. Supporting links use 18–20px type, 16px vertical padding, and a 56px minimum target height.
+
+The contact section includes a compact, lazy-loaded Google Maps iframe above its supporting links (220px tall on desktop, 200px on mobile), with a titled frame and a direct location link. The embed is taken from the institute's contact page.

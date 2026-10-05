@@ -1889,3 +1889,26 @@ summary {
 .connect-link small {
   font-size: 12px;
 }
+
+.contact-map {
+  margin-bottom: 24px;
+}
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: 1px solid var(--on-oxblood);
+  background: var(--paper);
+}
+.contact-map .text-link {
+  margin-top: 12px;
+  font-size: 13px;
+}
+.contact-map .icon {
+  filter: invert(1) sepia(1) saturate(1.4);
+}
+@media (max-width: 767px) {
+  .contact-map iframe {
+    height: 200px;
+  }
+}

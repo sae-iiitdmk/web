@@ -33,3 +33,5 @@ Copy should be concise and factual, with occasional expressive headlines in a fe
 Confirmed debut result: 12th nationally in the 2026 virtual round for mBAJA SAEINDIA 2027 (pitch deck pages 1–2; first participation confirmed by the user and institute post). The linked Mechanical Engineering department post provides a team photograph and director appreciation. Both supplied short links point to the same post.
 
 Contact section: visible `saeindia@iiitk.ac.in`; Mechanical Workshop, IIITDM Kurnool, Jagannathagattu Hill, Kurnool – 518008, Andhra Pradesh, India. The workshop location is specified by the user; campus postal address is sourced from https://iiitk.ac.in/Non-Teaching-Staff/page. No room number or workshop opening hours are assumed.
+
+College map: use the exact campus Google Maps embed supplied at https://iiitk.ac.in/Contact-Us/page; it locates IIITDM Kurnool rather than assuming a workshop-specific pin.
