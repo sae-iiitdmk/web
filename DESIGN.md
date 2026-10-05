@@ -160,3 +160,5 @@ The debut result pairs an uncropped team photograph with an oxblood copy panel. 
 Gallery navigation links to three named collections: Team & results, Workshop, and Logo. Sections have stable anchors; new uploads should be grouped by event or activity rather than appended to an unsorted collection.
 
 The header identifies the team as Team Monarch above the IIITDM Kurnool caption on every route. Its type and logo scale down on narrow phones to keep navigation controls visible.
+
+Contact details include a visible clickable email and a plain postal address. Supporting links use 18–20px type, 16px vertical padding, and a 56px minimum target height.
