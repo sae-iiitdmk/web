@@ -1,43 +1,18 @@
-# Assets Folder
+# Website media
 
-This folder serves as the central location for all media assets used in the SAE Club website.
+Add new uploads to `assets/incoming/`. Original files stay there locally and are ignored by Git; only reviewed, optimized website assets are published.
 
-## Recommended Structure
+- `images/chassis-assembly/`: eight selected workshop photographs, with full-size WebP images and smaller gallery thumbnails. Preserve natural proportions and describe only visible activity.
+- `documents/team-monarch-sponsorship-deck.pdf`: the complete supplied sponsorship deck, approved for public download.
+- `incoming/chassis-assembly/`: all 16 original photos and 12 videos extracted from the WhatsApp ZIP. The original ZIP and PDF also remain in `incoming/`.
 
-```
-assets/
-├── images/
-│   ├── logo/          # SAE club logos
-│   ├── team/          # Team photos
-│   ├── events/        # Event photos
-│   ├── projects/      # Project images
-│   └── gallery/       # Gallery images
-├── icons/             # Custom icons (if any)
-└── documents/         # PDFs, reports, etc.
-```
+Use lowercase descriptive names, accurate alt text, and lazy loading for images below the first viewport. Transfer timestamps do not establish when photographs were taken. See `../planning/MEDIA_INVENTORY.md` for source mapping.
 
-## Usage
+## Existing identity and vehicle assets
 
-When adding images, update the corresponding HTML files to reference them. Example:
+- `logo.jpeg`: original four-variant team logo sheet.
+- `logo-transparent.png`: transparent header logo derived with imagegen from the original sheet.
+- `vehicle.glb`: optimized interactive assembly from the supplied STEP.
+- `vehicle.webp` and `vehicle-mobile.webp`: loading posters rendered from that geometry.
 
-```html
-<img src="assets/images/team/group-photo.jpg" alt="SAE Team 2024" />
-```
-
-## Notes
-
-- Use optimized images (WebP format recommended for web)
-- Keep file names lowercase with hyphens
-- Include descriptive alt text for accessibility
-
-## Logo assets
-
-- `logo.jpeg`: original four-variant sheet supplied by the team.
-- `logo-transparent.png`: transparent red-and-gold header logo derived with the imagegen skill from the original sheet. The full sheet remains unchanged.
-
-CAD ZIP/STEP inputs are local source files; do not commit them as site assets.
-See `../MODEL_PLAN.md` for the model integration plan.
-
-## Vehicle assets
-
-`vehicle.glb` is the optimized interactive assembly imported from the locally supplied STEP. `vehicle.webp` and `vehicle-mobile.webp` are renders of that geometry used as loading posters. See `MODEL_PLAN.md` for conversion details.
+CAD ZIP/STEP inputs are local source files. See `../MODEL_PLAN.md` for model integration details. Fonts and icons retain their included licenses.

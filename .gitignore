@@ -20,3 +20,6 @@ assets/*.SLDASM
 assets/*.SLDPRT
 
 node_modules/
+
+# Original uploads are preserved locally; publish optimized selections only.
+/assets/incoming/

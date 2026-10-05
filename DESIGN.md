@@ -146,3 +146,7 @@ Square corners and continuous one-pixel rules define the system. Do not add roun
 - **Do** contain long headings within their grid columns on narrow screens.
 - **Don't** add rounded card stacks, gradients, or decorative shadows to this visual world.
 - **Don't** use fictional photographs, metrics, or achievements as visual proof.
+
+## Workshop photography
+
+The homepage pairs a large workshop image with a compact gallery invitation. Gallery photographs retain their natural proportions in three columns, two below 1024px, and one below 540px, with 24px gaps. Each photograph has a factual caption and opens in the existing native dialog; thumbnails are lazy-loaded and full-size images load on demand. Sponsorship actions use the existing ruled contact links, including the approved full PDF download.

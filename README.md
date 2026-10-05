@@ -30,16 +30,15 @@ Fonts and icons are self-hosted; there is no external runtime dependency.
 
 - Home: chapter introduction, engineering disciplines, teamwork, and verified links.
 - Field notes (`blogs.html`): complete educational articles on design, testing, and documentation.
-- Gallery: supplied logo artwork with a keyboard-accessible viewer and clearly marked future photo collections.
+- Gallery: eight curated chassis assembly photographs and supplied logo artwork with a keyboard-accessible viewer.
 
 The mobile menu, native disclosure panels, light/dark theme switch, and artwork
 viewer work without a framework. Motion respects reduced-motion preferences;
 unsupported scroll timelines fall back to a static logo. The main content and
 links remain available without JavaScript.
 
-Team photos, a confirmed roster, and official social URLs/contact email have not yet been supplied. The vehicle STEP has been supplied locally; see
-MODEL_PLAN.md for its preparation plan. Add real content before making
-claims about people, achievements, or competitions. `DESIGN.md` documents the
+Workshop photographs and the sponsorship deck have been supplied. The deck provides the official sponsorship email and team background; a confirmed roster and social URLs remain outstanding. The vehicle STEP has been supplied locally; see
+MODEL_PLAN.md for its preparation plan. Preserve original uploads locally in `assets/incoming/`; see `planning/MEDIA_INVENTORY.md` for the published selections. `DESIGN.md` documents the
 visual system; `PRODUCT.md` records the known product facts.
 
 ## Assets
