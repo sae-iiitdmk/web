@@ -1695,16 +1695,13 @@ summary {
 /* Sponsor marks retain their original colours on a consistent light surface. */
 .sponsor-section {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 32px;
   padding: 32px var(--space);
   border-bottom: 1px solid #151313;
   background: #f5f0e0;
   color: #151313;
-}
-.sponsor-section h2 {
-  font-size: clamp(24px, 2.5vw, 36px);
 }
 .sponsor-logo {
   display: flex;
@@ -1723,9 +1720,6 @@ summary {
   .sponsor-section {
     grid-template-columns: 1fr 1fr;
     gap: 16px 24px;
-  }
-  .sponsor-section h2 {
-    grid-column: 1 / -1;
   }
 }
 @media (max-width: 539px) {

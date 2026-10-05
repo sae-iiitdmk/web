@@ -151,4 +151,4 @@ Square corners and continuous one-pixel rules define the system. Do not add roun
 
 The homepage pairs a large workshop image with a compact gallery invitation. Gallery photographs retain their natural proportions in three columns, two below 1024px, and one below 540px, with 24px gaps. Each photograph has a factual caption and opens in the existing native dialog; thumbnails are lazy-loaded and full-size images load on demand. Sponsorship actions use the existing ruled contact links, including the approved full PDF download.
 
-The homepage sponsor strip sits immediately above contact, with two linked marks at their natural proportions. Its fixed cream surface preserves logo legibility in both themes. Logos stack on screens below 540px.
+The homepage sponsor strip sits immediately above contact, with two linked marks at their natural proportions and no visible heading. Its fixed cream surface preserves logo legibility in both themes. Logos stack on screens below 540px.
