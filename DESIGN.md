@@ -158,3 +158,5 @@ Most headings use direct labels. Two focused expressive headlines accompany the 
 The debut result pairs an uncropped team photograph with an oxblood copy panel. Gallery and notes retain the full photograph proportions, captions, and source links.
 
 Gallery navigation links to three named collections: Team & results, Workshop, and Logo. Sections have stable anchors; new uploads should be grouped by event or activity rather than appended to an unsorted collection.
+
+The header identifies the team as Team Monarch above the IIITDM Kurnool caption on every route. Its type and logo scale down on narrow phones to keep navigation controls visible.

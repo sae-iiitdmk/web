@@ -1836,3 +1836,27 @@ summary {
 .gallery-index a:hover {
   text-decoration-color: currentColor;
 }
+
+/* Team name remains readable alongside mobile navigation controls. */
+@media (max-width: 767px) {
+  .brand-name {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 360px) {
+  .brand {
+    gap: 8px;
+    padding-right: 8px;
+  }
+  .brand-mark {
+    width: 48px;
+    height: 65px;
+  }
+  .brand-name {
+    font-size: 16px;
+  }
+  .brand-name span {
+    font-size: 9px;
+  }
+}
