@@ -16,3 +16,12 @@ Use lowercase descriptive names, accurate alt text, and lazy loading for images 
 - `vehicle.webp` and `vehicle-mobile.webp`: loading posters rendered from that geometry.
 
 CAD ZIP/STEP inputs are local source files. See `../MODEL_PLAN.md` for model integration details. Fonts and icons retain their included licenses.
+
+## Sponsor marks
+
+The user confirmed Bank of India and Maruti Suzuki as current sponsors on 5 October 2026. Logos retain their original colours and proportions; no sponsorship tiers are implied.
+
+- `images/sponsors/maruti-suzuki.svg`: official Maruti Suzuki website asset, https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:791b5601-4cfa-4b0f-a77b-ec588eba84ad/as/Maruti-suzuki_logo_v1.svg
+- `images/sponsors/bank-of-india.png`: Bank of India mark sourced from https://companieslogo.com/bank-of-india/logo/ (the bank's website blocked automated retrieval).
+
+Both marks belong to their respective owners and are used to acknowledge the team's sponsors.

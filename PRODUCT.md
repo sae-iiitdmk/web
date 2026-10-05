@@ -25,3 +25,5 @@ Existing page drafts, one supplied logo sheet, and the team GitHub repository. A
 ## Open Decisions
 
 User confirmed: retain all three routes. Prospective students, collaborators, and visitors are likely readers, inferred from the informational team-site brief. Do not invent membership, awards, participation results, or contact information.
+
+Current sponsors confirmed by the team: Bank of India and Maruti Suzuki.
