@@ -1744,3 +1744,95 @@ summary {
     font-size: clamp(28px, 9vw, 40px);
   }
 }
+
+/* Debut result and supplied team photograph. */
+.achievement-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-bottom: 1px solid var(--ink);
+  background: var(--oxblood);
+  color: var(--on-oxblood);
+}
+.achievement-image {
+  align-self: center;
+  display: block;
+}
+.achievement-image img {
+  width: 100%;
+  height: auto;
+}
+.achievement-copy {
+  padding: var(--space);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.achievement-copy h2 {
+  font-size: clamp(32px, 4vw, 60px);
+}
+.achievement-copy p {
+  max-width: 48ch;
+}
+.achievement-copy .icon {
+  filter: invert(1) sepia(1) saturate(1.4);
+}
+.team-photo-section {
+  padding: var(--space);
+  border-bottom: 1px solid var(--ink);
+}
+.team-photo {
+  margin: 32px 0 20px;
+}
+.team-photo button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: var(--dark);
+}
+.team-photo img,
+.result-article-photo img {
+  width: 100%;
+  height: auto;
+}
+.team-photo figcaption,
+.result-article-photo figcaption {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.team-photo-result {
+  max-width: 65ch;
+}
+.result-article-photo {
+  margin: 24px 0;
+}
+.result-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .achievement-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  padding: 20px var(--space);
+  border-bottom: 1px solid var(--ink);
+  font-size: 13px;
+}
+.gallery-index a {
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 6px;
+}
+.gallery-index a:hover {
+  text-decoration-color: currentColor;
+}

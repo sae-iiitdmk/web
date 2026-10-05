@@ -25,3 +25,5 @@ The user confirmed Bank of India and Maruti Suzuki as current sponsors on 5 Octo
 - `images/sponsors/bank-of-india.png`: Bank of India mark sourced from https://companieslogo.com/bank-of-india/logo/ (the bank's website blocked automated retrieval).
 
 Both marks belong to their respective owners and are used to acknowledge the team's sponsors.
+
+`images/team-results/team-monarch-group.webp` is the team photograph from the user-linked institute post, used with its natural proportions. Original and source mapping are retained in `incoming/team-results/` and `planning/MEDIA_INVENTORY.md`.

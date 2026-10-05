@@ -28,4 +28,6 @@ User confirmed: retain all three routes. Prospective students, collaborators, an
 
 Current sponsors confirmed by the team: Bank of India and Maruti Suzuki.
 
-Copy should be concise and factual. Avoid slogans, motivational language, and repeated introductions.
+Copy should be concise and factual, with occasional expressive headlines in a few prominent areas. Avoid repeating slogans or introductions.
+
+Confirmed debut result: 12th nationally in the 2026 virtual round for mBAJA SAEINDIA 2027 (pitch deck pages 1–2; first participation confirmed by the user and institute post). The linked Mechanical Engineering department post provides a team photograph and director appreciation. Both supplied short links point to the same post.

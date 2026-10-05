@@ -17,7 +17,7 @@
       crossorigin
     />
     <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
-    <link rel="stylesheet" href="css/styles.css?v=plain-copy-1" />
+    <link rel="stylesheet" href="css/styles.css?v=team-debut-1" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -92,12 +92,65 @@
         <h1>Gallery</h1>
         <div>
           <p>
-            Chassis mock-up assembly and seating checks in the institute
-            workshop.
+            Team photographs, our debut result, and chassis mock-up assembly.
           </p>
         </div>
       </section>
-      <section class="build-gallery" aria-labelledby="build-gallery-title">
+      <nav class="gallery-index" aria-label="Gallery collections">
+        <a href="#team-photos">Team &amp; results</a
+        ><a href="#workshop-photos">Workshop</a><a href="#team-logo">Logo</a>
+      </nav>
+      <section
+        id="team-photos"
+        class="team-photo-section"
+        aria-labelledby="team-photo-title"
+      >
+        <div class="section-bar">
+          <h2 id="team-photo-title">Team &amp; results</h2>
+          <a
+            class="text-link"
+            href="https://www.linkedin.com/posts/iiitdm-kurnool-mechanical-engineering-6707823a5_sae-iiitdm-monarch-share-7491447942181122048--TMN/"
+            ><span>View the institute post</span
+            ><img
+              class="icon"
+              src="assets/icons/arrow-up-right.svg"
+              width="24"
+              height="24"
+              alt=""
+              aria-hidden="true"
+          /></a>
+        </div>
+        <figure class="team-photo">
+          <button
+            type="button"
+            data-lightbox="assets/images/team-results/team-monarch-group.webp"
+            data-caption="Team Monarch members and faculty at IIITDM Kurnool"
+            aria-label="Enlarge team photograph"
+          >
+            <img
+              src="assets/images/team-results/team-monarch-group.webp"
+              width="800"
+              height="369"
+              alt="Team Monarch members and faculty gathered at IIITDM Kurnool"
+              loading="lazy"
+              decoding="async"
+            />
+          </button>
+          <figcaption>
+            Team Monarch members and faculty at IIITDM Kurnool.
+          </figcaption>
+        </figure>
+        <p class="team-photo-result">
+          Team Monarch secured <strong>12th place nationally</strong> in the
+          2026 virtual round for mBAJA SAEINDIA 2027, on our first
+          participation.
+        </p>
+      </section>
+      <section
+        id="workshop-photos"
+        class="build-gallery"
+        aria-labelledby="build-gallery-title"
+      >
         <div class="section-bar">
           <h2 id="build-gallery-title">Workshop photos</h2>
         </div>
@@ -248,7 +301,7 @@
           </figure>
         </div>
       </section>
-      <section class="identity-section">
+      <section id="team-logo" class="identity-section">
         <div class="identity-copy">
           <h2>Team logo</h2>
           <p>Original logo variants. Select to enlarge.</p>

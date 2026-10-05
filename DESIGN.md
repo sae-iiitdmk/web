@@ -153,4 +153,8 @@ The homepage pairs a large workshop image with a compact gallery invitation. Gal
 
 The homepage sponsor strip sits immediately above contact, with two linked marks at their natural proportions and no visible heading. Its fixed cream surface preserves logo legibility in both themes. Logos stack on screens below 540px.
 
-Headings use direct labels. Copy is brief and factual; repeated introduction panels and promotional slogans are omitted.
+Most headings use direct labels. Two focused expressive headlines accompany the debut result and workshop photographs; copy elsewhere stays brief and factual. Repeated introduction panels are omitted.
+
+The debut result pairs an uncropped team photograph with an oxblood copy panel. Gallery and notes retain the full photograph proportions, captions, and source links.
+
+Gallery navigation links to three named collections: Team & results, Workshop, and Logo. Sections have stable anchors; new uploads should be grouped by event or activity rather than appended to an unsorted collection.

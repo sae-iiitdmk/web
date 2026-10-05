@@ -29,8 +29,8 @@ oxblood/carbon-black panels with gold accents, and scroll-linked movement of the
 Fonts and icons are self-hosted; there is no external runtime dependency.
 
 - Home: team introduction, vehicle model, workshop photos, disciplines, sponsor logos, and contact links.
-- Field notes (`blogs.html`): concise educational notes on design, testing, and documentation.
-- Gallery: eight curated chassis assembly photographs and supplied logo artwork with a keyboard-accessible viewer.
+- Field notes (`blogs.html`): the debut virtual-round result and concise notes on design, testing, and documentation.
+- Gallery: Team & results, Workshop, and Logo collections, with jump links and a keyboard-accessible image viewer.
 
 The mobile menu, native disclosure panels, light/dark theme switch, and artwork
 viewer work without a framework. Motion respects reduced-motion preferences;
