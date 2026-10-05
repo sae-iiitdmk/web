@@ -35,3 +35,5 @@ Confirmed debut result: 12th nationally in the 2026 virtual round for mBAJA SAEI
 Contact section: visible `saeindia@iiitk.ac.in`; Mechanical Workshop, IIITDM Kurnool, Jagannathagattu Hill, Kurnool – 518008, Andhra Pradesh, India. The workshop location is specified by the user; campus postal address is sourced from https://iiitk.ac.in/Non-Teaching-Staff/page. No room number or workshop opening hours are assumed.
 
 College map: use the exact campus Google Maps embed supplied at https://iiitk.ac.in/Contact-Us/page; it locates IIITDM Kurnool rather than assuming a workshop-specific pin.
+
+User requested Helvetica throughout, ultra-bold headings, larger panel copy, and removal of the footer below Contact. Use an installed Helvetica-first stack with Arial fallback; do not bundle unprovided proprietary fonts. Contact is the final homepage section.

@@ -20,35 +20,35 @@ colors:
   line-dark-theme: "#756754"
 typography:
   display:
-    fontFamily: "Manrope, sans-serif"
-    fontSize: "clamp(32px, 3.2vw, 52px)"
-    fontWeight: 800
+    fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontSize: "clamp(36px, 4.4vw, 64px)"
+    fontWeight: 900
     lineHeight: 1.04
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Manrope, sans-serif"
-    fontSize: "clamp(52px, 6vw, 92px)"
-    fontWeight: 800
+    fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontSize: "clamp(52px, 6.2vw, 88px)"
+    fontWeight: 900
     lineHeight: 1.05
     letterSpacing: "-0.04em"
   title:
-    fontFamily: "Manrope, sans-serif"
+    fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "clamp(24px, 2.65vw, 40px)"
-    fontWeight: 800
+    fontWeight: 900
     lineHeight: 1.05
     letterSpacing: "-0.04em"
   body:
-    fontFamily: "Manrope, sans-serif"
-    fontSize: "16px"
-    lineHeight: 1.55
+    fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontSize: "20px"
+    lineHeight: 1.5
   label:
-    fontFamily: "Manrope, sans-serif"
+    fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
     fontSize: "12px"
 spacing:
-  section: "clamp(24px, 4vw, 64px)"
+  section: "clamp(24px, 3.5vw, 56px)"
   mobile-section: "24px"
-  section-margin: "55px"
-  row: "32px"
+  section-margin: "0"
+  row: "24px"
   compact: "12px"
 components:
   text-link:
@@ -83,7 +83,7 @@ components:
 
 **Creative North Star: “Aspen's editorial grid, adapted to SAE.”**
 
-The user-selected Aspen Search reference sets the layout and motion; the team palette sets all colors: oversized Manrope lettering, carbon-black and oxblood planes, gold identity accents, and thin continuous dividers. The supplied SAE logo sheet anchors the identity; its cropped monograms provide artwork without invented team photography.
+The user-selected Aspen Search reference sets the layout and motion; the team palette sets all colors: oversized Helvetica-first lettering, carbon-black and oxblood planes, gold identity accents, and thin continuous dividers. The supplied SAE logo sheet anchors the identity; its cropped monograms provide artwork without invented team photography.
 
 Key characteristics:
 
@@ -95,7 +95,7 @@ Key characteristics:
 
 ### Primary
 
-Oxblood (#4a101b) owns invitation panels and the hero artwork, paired with pale gold (#f3ddb0). Gold (#c7a45c) carries the masthead, team-art background, and text selection. Carbon black (#121212) anchors the hero masthead, statement, and footer. These brand colors were explicitly supplied by the user and take precedence over the reference palette.
+Oxblood (#4a101b) owns invitation panels and the hero artwork, paired with pale gold (#f3ddb0). Gold (#c7a45c) carries the masthead, team-art background, and text selection. Carbon black (#121212) anchors the hero masthead and introduction. These brand colors were explicitly supplied by the user and take precedence over the reference palette.
 
 ### Neutral
 
@@ -107,15 +107,15 @@ The five `*-dark-theme` frontmatter colors replace paper, ink, muted, wash, and 
 
 ## Typography
 
-Display and body share self-hosted variable **Manrope**, with a sans-serif fallback. The WOFF2 asset is `assets/fonts/manrope-latin.woff2`; the declared weight range is 400–800 and font display is swap.
+Display and body share the installed **Helvetica Neue / Helvetica** stack, with Arial and sans-serif fallbacks. Headings request weight 900; the installed font determines the available rendered weight. The previous Manrope preload and active font-face declaration are removed.
 
 Frontmatter records the masthead, major section heading, note title, body, and label roles. General headings use balanced wrapping. The chapter subline uses `clamp(25px, 3.3vw, 50px)` and line height 1.15; inner-page display headings use `clamp(85px, 10vw, 160px)`. Body paragraphs cap at 65ch; article paragraphs cap at 60ch.
 
-The home masthead spells out Society of Automotive Engineers, with a 34px stacked heading and chapter caption on mobile; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
+The home masthead spells out Society of Automotive Engineers, with a 34–42px stacked heading and chapter caption on mobile; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
 
 ## Layout
 
-Use full-width sections rather than a centered card stack. The desktop hero uses a 3:7 text/vehicle split with a 280px minimum text rail. The vehicle spans the identity and intro rows; its height is `clamp(560px, calc(100svh - 180px), 720px)`. The hero contains the team name, a short factual introduction, and the vehicle; slogan panels are omitted. Copy groups align at the top with 16–24px gaps rather than stretching short text across tall panels. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
+Use full-width sections rather than a centered card stack. The desktop hero uses a 3:7 text/vehicle split with a 280px minimum text rail. The vehicle spans the identity and intro rows; its height is `clamp(560px, calc(100svh - 180px), 640px)`. The hero contains the team name, a short factual introduction, and the vehicle; slogan panels are omitted. Copy groups align at the top with 16–24px gaps rather than stretching short text across tall panels. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
 
 Section padding follows the frontmatter section token. Below 768px it becomes 24px, major grids stack, and collections become one column. The mobile hero stacks a compact identity heading, a 420px vehicle panel, and supporting text with content-driven heights. Vehicle controls reserve 72px and have a 44px minimum button height. At 1150px and below the clock hides and header spacing tightens. At 360px and below controls and hero copy tighten further. Above 1800px the body caps at 1800px with side borders.
 
@@ -141,7 +141,7 @@ Square corners and continuous one-pixel rules define the system. Do not add roun
 
 ## Do's and Don'ts
 
-- **Do** preserve Manrope, divided grids, fixed surface/foreground pairs, and the supplied identity artwork.
+- **Do** preserve Helvetica-first typography, divided grids, fixed surface/foreground pairs, and the supplied identity artwork.
 - **Do** keep keyboard, native details/dialog behavior, dark theme, and reduced-motion fallbacks intact.
 - **Do** contain long headings within their grid columns on narrow screens.
 - **Don't** add rounded card stacks, gradients, or decorative shadows to this visual world.
@@ -164,3 +164,11 @@ The header identifies the team as Team Monarch above the IIITDM Kurnool caption 
 Contact details include a visible clickable email and a plain postal address. Supporting links use 18–20px type, 16px vertical padding, and a 56px minimum target height.
 
 The contact section includes a compact, lazy-loaded Google Maps iframe above its supporting links (220px tall on desktop, 200px on mobile), with a titled frame and a direct location link. The embed is taken from the institute's contact page.
+
+## Typography and final section
+
+Use Helvetica Neue / Helvetica when installed, falling back to Arial / sans-serif. No proprietary Helvetica font files are bundled. Headings request weight 900; available installed font faces determine the rendered weight. General body copy is 20px on desktop, with main panel copy at 22–28px and phone copy at 20–22px. Captions use 15px. Compact navigation, map links, and contact actions retain moderate sizes.
+
+The shared footer panels are removed. Contact is the final homepage section. Main panel padding caps at 56px; work and notes omit their former extra margins. Text remains content-driven, with no forced panel-height stretching.
+
+The hero now caps at 640px with 36–64px desktop title type and 20–28px introduction copy. The logo sheet caps at 440px inside a 24px padded panel to avoid creating an oversized adjacent text panel.

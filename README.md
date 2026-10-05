@@ -24,9 +24,9 @@ Open <http://127.0.0.1:8000>. Stop the server with Ctrl+C.
 
 ## Design and content
 
-The site uses an Aspen Search-inspired divided grid, oversized Manrope type,
+The site uses an Aspen Search-inspired divided grid, Helvetica-first typography,
 oxblood/carbon-black panels with gold accents, and scroll-linked movement of the supplied team monogram.
-Fonts and icons are self-hosted; there is no external runtime dependency.
+Typography uses installed Helvetica Neue/Helvetica with Arial fallback; icons and the 3D viewer are self-hosted. The contact section contains a lazy-loaded Google Maps embed.
 
 - Home: team introduction, vehicle model, workshop photos, disciplines, sponsor logos, and contact links.
 - Field notes (`blogs.html`): the debut virtual-round result and concise notes on design, testing, and documentation.
