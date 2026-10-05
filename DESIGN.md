@@ -21,10 +21,10 @@ colors:
 typography:
   display:
     fontFamily: "Manrope, sans-serif"
-    fontSize: "clamp(120px, 17vw, 260px)"
+    fontSize: "clamp(76px, 9vw, 144px)"
     fontWeight: 500
     lineHeight: 0.85
-    letterSpacing: "-0.055em"
+    letterSpacing: "-0.04em"
   headline:
     fontFamily: "Manrope, sans-serif"
     fontSize: "clamp(52px, 6vw, 92px)"
@@ -111,13 +111,13 @@ Display and body share self-hosted variable **Manrope**, with a sans-serif fallb
 
 Frontmatter records the masthead, major section heading, note title, body, and label roles. General headings use balanced wrapping. The chapter subline uses `clamp(25px, 3.3vw, 50px)` and line height 1.15; inner-page display headings use `clamp(85px, 10vw, 160px)`. Body paragraphs cap at 65ch; article paragraphs cap at 60ch.
 
-At mobile widths the masthead uses `clamp(120px, 35vw, 240px)`; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
+At mobile widths the masthead uses 60px with the chapter name inline; primary section headings use 60px. Inner-page titles use `clamp(68px, 22vw, 90px)` to contain long words.
 
 ## Layout
 
-Use full-width sections rather than a centered card stack. The desktop hero grid is 2:1:1 with its artwork spanning the two right columns; rows are `clamp(400px, 46vw, 600px)` and 350px. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
+Use full-width sections rather than a centered card stack. The desktop hero uses a 3:7 text/vehicle split with a 280px minimum text rail. The vehicle spans the identity, statement, and intro rows; its height is `clamp(560px, calc(100svh - 180px), 720px)`. A compact 100px invitation strip runs below both columns. Copy groups align at the top with 16–24px gaps rather than stretching short text across tall panels. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
 
-Section padding follows the frontmatter section token. Below 768px it becomes 24px, major grids stack, and collections become one column. The mobile hero keeps two lower panels beside each other after full-width title, artwork, and statement rows. At 1150px and below the clock hides and header spacing tightens. At 360px and below controls and hero copy tighten further. Above 1800px the body caps at 1800px with side borders.
+Section padding follows the frontmatter section token. Below 768px it becomes 24px, major grids stack, and collections become one column. The mobile hero stacks a compact identity heading, a 420px vehicle panel, and supporting text with content-driven heights. Vehicle controls reserve 72px and have a 44px minimum button height. At 1150px and below the clock hides and header spacing tightens. At 360px and below controls and hero copy tighten further. Above 1800px the body caps at 1800px with side borders.
 
 The sticky header is 76px tall, or 66px below 768px. Its layer is 10; the mobile navigation is fixed immediately below it at layer 9. Journal navigation is sticky on desktop and static on mobile.
 
