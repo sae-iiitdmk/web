@@ -115,7 +115,7 @@ The home masthead spells out Society of Automotive Engineers, with a 34px stacke
 
 ## Layout
 
-Use full-width sections rather than a centered card stack. The desktop hero uses a 3:7 text/vehicle split with a 280px minimum text rail. The vehicle spans the identity, statement, and intro rows; its height is `clamp(560px, calc(100svh - 180px), 720px)`. A compact 100px invitation strip runs below both columns. Copy groups align at the top with 16–24px gaps rather than stretching short text across tall panels. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
+Use full-width sections rather than a centered card stack. The desktop hero uses a 3:7 text/vehicle split with a 280px minimum text rail. The vehicle spans the identity and intro rows; its height is `clamp(560px, calc(100svh - 180px), 720px)`. The hero contains the team name, a short factual introduction, and the vehicle; slogan panels are omitted. Copy groups align at the top with 16–24px gaps rather than stretching short text across tall panels. General splits are 1:1, contact is 1.5:1, journal navigation/content is 1:2, and collections are three equal columns.
 
 Section padding follows the frontmatter section token. Below 768px it becomes 24px, major grids stack, and collections become one column. The mobile hero stacks a compact identity heading, a 420px vehicle panel, and supporting text with content-driven heights. Vehicle controls reserve 72px and have a 44px minimum button height. At 1150px and below the clock hides and header spacing tightens. At 360px and below controls and hero copy tighten further. Above 1800px the body caps at 1800px with side borders.
 
@@ -152,3 +152,5 @@ Square corners and continuous one-pixel rules define the system. Do not add roun
 The homepage pairs a large workshop image with a compact gallery invitation. Gallery photographs retain their natural proportions in three columns, two below 1024px, and one below 540px, with 24px gaps. Each photograph has a factual caption and opens in the existing native dialog; thumbnails are lazy-loaded and full-size images load on demand. Sponsorship actions use the existing ruled contact links, including the approved full PDF download.
 
 The homepage sponsor strip sits immediately above contact, with two linked marks at their natural proportions and no visible heading. Its fixed cream surface preserves logo legibility in both themes. Logos stack on screens below 540px.
+
+Headings use direct labels. Copy is brief and factual; repeated introduction panels and promotional slogans are omitted.

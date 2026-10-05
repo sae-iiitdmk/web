@@ -1437,9 +1437,9 @@ a:hover > .icon {
 /* Vehicle-led hero: compact copy rail beside the assembly. */
 .hero {
   --vehicle-height: clamp(560px, calc(100svh - 180px), 720px);
-  height: calc(var(--vehicle-height) + 100px);
+  height: var(--vehicle-height);
   grid-template-columns: minmax(280px, 3fr) minmax(0, 7fr);
-  grid-template-rows: auto auto minmax(0, 1fr) 100px;
+  grid-template-rows: auto minmax(0, 1fr);
 }
 .hero-title {
   grid-column: 1;
@@ -1467,7 +1467,7 @@ a:hover > .icon {
 }
 .hero-art {
   grid-column: 2;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
   min-height: 0;
 }
 .hero-statement {
@@ -1483,7 +1483,7 @@ a:hover > .icon {
 }
 .hero-intro {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
   padding: 24px;
   min-height: 0;
   justify-content: flex-start;
@@ -1527,7 +1527,7 @@ a:hover > .icon {
   .hero {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 420px auto auto auto;
+    grid-template-rows: auto 420px auto;
   }
   .hero-title {
     grid-column: 1;
@@ -1560,7 +1560,7 @@ a:hover > .icon {
   }
   .hero-intro {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
     padding: 20px 16px;
     gap: 16px;
     border-right: 0;
@@ -1729,5 +1729,18 @@ summary {
   }
   .sponsor-logo {
     min-height: 80px;
+  }
+}
+
+/* Keep concise article headings within narrow screens. */
+.journal-articles {
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  .journal-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .journal-articles h2 {
+    font-size: clamp(28px, 9vw, 40px);
   }
 }

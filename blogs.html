@@ -17,7 +17,7 @@
       crossorigin
     />
     <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
-    <link rel="stylesheet" href="css/styles.css?v=sponsors-2" />
+    <link rel="stylesheet" href="css/styles.css?v=plain-copy-1" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -92,10 +92,7 @@
       <section class="page-intro">
         <h1>Field<br />notes.</h1>
         <div>
-          <p>
-            Thoughts from the engineering notebook. A closer look at the process
-            behind designing, building, and learning together.
-          </p>
+          <p>Short notes on design, testing, and documentation.</p>
           <a href="#design" class="scroll-cue"
             >Start reading
             <img
@@ -110,91 +107,49 @@
       </section>
       <div class="journal-layout">
         <nav class="journal-nav" aria-label="Article navigation">
-          <span>In this notebook</span
-          ><a href="#design">Design before manufacture</a
+          <span>Contents</span><a href="#design">Design before manufacture</a
           ><a href="#iteration">Testing and iteration</a
           ><a href="#documentation">Shared documentation</a>
         </nav>
         <div class="journal-articles">
           <article id="design">
-            <span class="note-category">Design</span>
-            <h2>Before the first<br />part is made.</h2>
-            <p class="lead">
-              A useful design starts with the question it needs to answer.
+            <h2>Design before<br />manufacture</h2>
+            <p>
+              Define the part's purpose, loads, mounting points, and
+              manufacturing method before modelling it.
             </p>
             <p>
-              Before opening a CAD model, write down the purpose of the part.
-              What does it connect to? What loads might it experience? How will
-              it be manufactured, assembled, and inspected?
-            </p>
-            <p>
-              These questions turn a shape into an engineering decision. Start
-              with a sketch and a short list of constraints. Then use the model
-              to explore alternatives rather than treating the first version as
-              the finished answer.
-            </p>
-            <h3>Look beyond the individual part.</h3>
-            <p>
-              A component belongs to a system. Clearances, mounting points,
-              available tools, and access for maintenance matter alongside
-              geometry. Reviewing a design with someone from another discipline
-              can reveal questions that were easy to overlook.
+              Use sketches and CAD to compare options. Check clearances,
+              assembly access, and maintenance needs with the other subteams.
             </p>
           </article>
           <article id="iteration">
-            <span class="note-category">Process</span>
-            <h2>Build. Test.<br />Ask better questions.</h2>
-            <p class="lead">
-              A test is most useful when you know what you want to learn.
+            <h2>Testing and<br />iteration</h2>
+            <p>
+              Set a clear test objective. Record the setup, conditions,
+              measurements, and expected result so tests can be compared.
             </p>
             <p>
-              Choose a specific question before running a test. Define what you
-              will observe, what conditions you will use, and what result would
-              lead you to change the design. Record the setup so the next test
-              can be compared fairly.
-            </p>
-            <p>
-              When a result differs from an expectation, inspect the assumptions
-              as well as the component. A loose connection, a measurement error,
-              or a change in the test conditions can alter what the result
-              means.
-            </p>
-            <h3>Make the next version deliberate.</h3>
-            <p>
-              Document the observation, propose an explanation, and change one
-              relevant variable where practical. Iteration becomes more valuable
-              when the team can explain why each version is different.
+              Review unexpected results for measurement errors or loose
+              connections. Change one relevant variable at a time and record the
+              outcome.
             </p>
           </article>
           <article id="documentation">
-            <span class="note-category">Teamwork</span>
-            <h2>Leave a trail for<br />the next engineer.</h2>
-            <p class="lead">
-              The reasoning behind a decision is part of the work.
+            <h2>Project<br />documentation</h2>
+            <p>
+              Keep requirements, drawings, design decisions, and test
+              observations with the project files.
             </p>
             <p>
-              A model or drawing shows what was made. A short design note
-              explains why. Keep the requirements, alternatives considered,
-              important dimensions, and unresolved questions close to the
-              project files.
-            </p>
-            <p>
-              Clear file names and revision notes make it easier to collaborate.
-              Record what changed and why, and make sure the drawing and model
-              refer to the same version before anyone begins manufacturing.
-            </p>
-            <h3>Keep notes useful, not elaborate.</h3>
-            <p>
-              A few specific sentences, an annotated sketch, and a test
-              observation are often more helpful than a long report written
-              after the details have been forgotten. Write for the person who
-              will pick up the work next.
+              Use clear filenames and revision notes. Check that drawings and
+              CAD models refer to the same version before manufacturing.
             </p>
           </article>
         </div>
       </div>
       <section class="small-cta">
-        <h2>More to explore.</h2>
+        <h2>Workshop photos</h2>
         <a class="text-link" href="gallery.html"
           ><span>Visit the gallery</span
           ><img
@@ -241,7 +196,6 @@
       </div>
       <div class="footer-bottom">
         <span>Society of Automotive Engineers</span
-        ><span>Built together. In Kurnool.</span
         ><span>© <span data-year>2026</span> SAE IIITDM Kurnool</span>
       </div>
     </footer>

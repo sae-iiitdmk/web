@@ -28,8 +28,8 @@ The site uses an Aspen Search-inspired divided grid, oversized Manrope type,
 oxblood/carbon-black panels with gold accents, and scroll-linked movement of the supplied team monogram.
 Fonts and icons are self-hosted; there is no external runtime dependency.
 
-- Home: chapter introduction, engineering disciplines, teamwork, and verified links.
-- Field notes (`blogs.html`): complete educational articles on design, testing, and documentation.
+- Home: team introduction, vehicle model, workshop photos, disciplines, sponsor logos, and contact links.
+- Field notes (`blogs.html`): concise educational notes on design, testing, and documentation.
 - Gallery: eight curated chassis assembly photographs and supplied logo artwork with a keyboard-accessible viewer.
 
 The mobile menu, native disclosure panels, light/dark theme switch, and artwork
