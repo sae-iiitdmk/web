@@ -1,7 +1,7 @@
 # SAE website
 
 This is a static HTML/CSS/JavaScript website hosted on GitHub Pages through
-`.github/workflows/pages.yml`. Keep relative URLs compatible with `/website/`.
+`.github/workflows/pages.yml`. Keep relative URLs compatible with `/web/`.
 
 ## Design skills
 

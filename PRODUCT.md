@@ -12,7 +12,7 @@ A static informational website with information and links regarding the SAE team
 
 ## Capabilities and Constraints
 
-Existing home, blogs, and gallery routes. Plain HTML, CSS, and browser JavaScript. GitHub Pages with Actions at https://sae-iiitdmk.github.io/website/. Keep relative links. No backend or build tooling required.
+Existing home, blogs, and gallery routes. Plain HTML, CSS, and browser JavaScript. GitHub Pages with Actions at https://sae-iiitdmk.github.io/web/. Keep relative links. No backend or build tooling required.
 
 ## Brand Commitments
 

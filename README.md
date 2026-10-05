@@ -51,9 +51,9 @@ Their licenses are included in `assets/fonts/` and `assets/icons/`.
 
 ## GitHub Pages deployment
 
-- Repository: <https://github.com/sae-iiitdmk/website>
-- Website address once deployed: <https://sae-iiitdmk.github.io/website/>
-- Deployment runs: <https://github.com/sae-iiitdmk/website/actions/workflows/pages.yml>
+- Repository: <https://github.com/sae-iiitdmk/web>
+- Website address once deployed: <https://sae-iiitdmk.github.io/web/>
+- Deployment runs: <https://github.com/sae-iiitdmk/web/actions/workflows/pages.yml>
 
 Set **Settings > Pages > Source** to **GitHub Actions** before the first deployment.
 The workflow
@@ -65,12 +65,12 @@ into a staging folder, uploads it, and deploys it to Pages. No build tool or
 custom secret is required. If you add another page or top-level asset folder,
 include it in the workflow's copy step.
 
-Keep navigation and asset paths relative so they work under `/website/`.
+Keep navigation and asset paths relative so they work under `/web/`.
 After pushing changes, wait for the deployment run to succeed and check the
 published pages. Pages settings are at
-<https://github.com/sae-iiitdmk/website/settings/pages>.
+<https://github.com/sae-iiitdmk/web/settings/pages>.
 
-To use `https://sae-iiitdmk.github.io/` without `/website/`, rename this
+To use `https://sae-iiitdmk.github.io/` without `/web/`, rename this
 repository to `sae-iiitdmk.github.io` and update these links.
 
 References:
